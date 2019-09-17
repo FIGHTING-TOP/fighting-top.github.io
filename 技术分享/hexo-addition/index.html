@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="大音希声，大象无形">
+    <meta name="keyword" content="undefined">
+<!--    <link rel="shortcut icon" href="/img/ironman-draw.png">-->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          hexo博客发布之后的杂谈 - 王明伟 | Blog
+        
+    </title>
+
+    <link rel="canonical" href="https://fighting-top.github.io/技术分享/hexo-addition/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/beantech.min.css">
+
+    <link rel="stylesheet" href="/css/donate.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('/img/article_header/article_header.png')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
+                            
+                              <a class="tag" href="/tags/#blog" title="blog">blog</a>
+                            
+                              <a class="tag" href="/tags/#PWA" title="PWA">PWA</a>
+                            
+                              <a class="tag" href="/tags/#AMP" title="AMP">AMP</a>
+                            
+                              <a class="tag" href="/tags/#HTTPS" title="HTTPS">HTTPS</a>
+                            
+                        </div>
+                        <h1>hexo博客发布之后的杂谈</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by WangMingwei on
+                            2019-09-17
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Tiger&#39;s blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h1><span id="https-amp-http2">HTTPS &amp; HTTP/2</span></h1>
+<p>现在是 2019 年了，网站不是 HTTPS 和 HTTP/2 的感觉脱离时代了。HTTPS 已经不是因为安全方面的问题来考虑的了，而是后面所讲到的 PWA 里面很多最新的 HTML5 API 都是要求在 HTTPS 环境下才能正常工作的，所以要想让我们的博客更加的完美，必须要提供 HTTPS 环境。</p>
+<p>可是，我并没有主机啊，没有服务器，怎么配证书？有主机的土豪的 HTTPS 证书可以通过 <a href="https://letsencrypt.org/" target="_blank" rel="noopener">Let’s Encrypt</a> 获取免费的，这个地方不深入讲了，可以参考 <a href="https://lavas.baidu.com/guide/vue/doc/vue/advanced/https-deploy" target="_blank" rel="noopener">HTTPS 环境部署</a>。</p>
+<p>我们今天介绍另一个免费的东西，不用服务器配置证书，通过 DNS 代理的形式，直接可以做到 HTTPS &amp; HTTP/2 接入，这个东西叫 <a href="https://www.cloudflare.com/" target="_blank" rel="noopener">cloudflare</a></p>
+<p>简单的介绍一下步骤：</p>
+<ul>
+<li>上 cloudflare 注册一个账号</li>
+<li>添加你的域名</li>
+<li>选择 Free Plan</li>
+<li>根据提示进行一系列的配置（就是些选项）</li>
+<li>最后会生成两个 DNS 的服务器地址</li>
+<li>进入你的域名运营商的配置后台，将默认的 DNS 服务配置成 cloudflare 生成的两个 DNS 服务地址</li>
+</ul>
+<p>由于 DNS 服务全球更新速度较慢，可能得等个一天两天的服务才能稳定访问。总之，这时候，你的站点已经是 HTTPS &amp; HTTP/2 的站点了。</p>
+<blockquote>
+<p>cloudflare 的配置有很多，可以在后台进行配置，SSL 需要选择 <code>FULL</code>, 并且设置 <code>HTTP REWRITE</code> 让站点能自动从 HTTP 重定向到 HTTPS。还有很多有用的配置，大家可以自己把玩。</p>
+</blockquote>
+<h1><span id="构建-amp">构建 AMP</span></h1>
+<p><a href="https://www.ampproject.org/zh_cn/learn/overview/" target="_blank" rel="noopener">AMP</a> 是 Google 推出的一种网页加速的标准，通过这种标准，可以使你的站点在 Google 搜索结果页（这里是一个忧伤的故事，但是这并不影响我们折腾博客的激情）之后的跳转变得速度超快，具体可以详情见 AMP 的官网，Google 还会对 AMP 的站点有一定的调权，也就是说，如果你的博客提供了 AMP 的页面，将会被 Google 更容易抓取和优先展现，并且能够在 Google 的搜索结果页秒开。</p>
+<p>并且由于 AMP 页面的无 block 的处理，让用户在单独访问你的 AMP 页面的时候也有秒开的体验。还是很懵逼？什么是 AMP？其实就是一个 HTML 页面，知识遵守 AMP 规范的页面，就想你现在在看的这篇博文，就有 <a href="./amp">AMP 版本</a>。</p>
+<p>那么如何让我们的博客能支持 AMP 呢？Hexo 社区有一个叫做 <code>hexo-generator-amp</code> 的插件可以干这个事情。</p>
+<h2><span id="引入-hexo-generator-amp-插件">引入 hexo-generator-amp 插件</span></h2>
+<p>可以使用 Hexo 的 <code>hexo-generator-amp</code> 插件来帮助我们构建出 AMP 的页面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\# 在 hexo 博客项目的根目录执行下面的命令  </span><br><span class="line">npm install --save hexo-generator-amp</span><br></pre></td></tr></table></figure>
+<p>此时，博客已经具备生成 AMP 页面的基础了，由于 AMP 是一套独立的页面，<code>hexo-generator-amp</code> 插件只会对文章页面生成 AMP 页面，要想验证，只需要在原本文章的 URL 的基础上在后面加上 <code>/amp</code> 即可。</p>
+<h2><span id="配置-_configyml">配置 _config.yml</span></h2>
+<p><code>hexo-generator-amp</code> 插件是需要从 <code>_config.yml</code> 中读取配置才行，配置如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">\# amp config  </span><br><span class="line">generator_amp:  </span><br><span class="line"> templateDir:  amp-template  </span><br><span class="line"> assetDistDir: amp-dist  </span><br><span class="line"> logo:  </span><br><span class="line"> path: sample/sample-logo.png  </span><br><span class="line"> width: 600  </span><br><span class="line"> height: 60  </span><br><span class="line"> substituteTitleImage:   </span><br><span class="line"> path: sample/sample-substituteTitleImage.png  </span><br><span class="line"> width: 1024  </span><br><span class="line"> height: 800  </span><br><span class="line"> warningLog: false   \# To display warning, please set true.</span><br></pre></td></tr></table></figure>
+<p>其中，amp-template 是指明渲染 AMP 页面时候所使用的渲染模版，这种配置表明 AMP 是有一套自己的 theme, 如果想改变默认的 AMP 主题或者其他配置，可以对 amp-template 里面的内容进行二次开发。</p>
+<h2><span id="将-amp-页面提交-google-收录">将 AMP 页面提交 Google 收录</span></h2>
+<p>目前 AMP 只能被 Google 搜索引擎所解析执行，所以在我们每写完一篇博客的时候，可以将生成的 AMP URL 提交给 Google 收录（虽然这是一个忧伤的故事，但是能被外国友人轻快速搜索到并且阅读体验好，也是蛮不错的一个自我安慰）。</p>
+<p>颇为无奈的抛出一个你可能需要梯子才能够得着的 <a href="https://www.google.com/webmasters/tools/submit-url?hl=zh-CN&amp;pli=1" target="_blank" rel="noopener">Google 的收录入口</a> 。</p>
+<h1><span id="添加-pwa-特性">添加 PWA 特性</span></h1>
+<hr>
+<p>PWA 是一种渐进式的 Web App, 我们的博客其实就是一个 Web App, 渐进式的，就是慢慢来，一步一步的用一些 HTML5 的最新 API 的实现将我们的站点的用户体验做到极致。</p>
+<h2><span id="为什么要-pwa">为什么要 PWA</span></h2>
+<p>博客站点是最适合改造成 PWA 的站点了，博客具有这么几个特点：</p>
+<ul>
+<li>内容更新不频繁，静态资源可能很久很久很久都不会更新（特别适合做离线缓存）</li>
+<li>博客是静态化页面（特别适合做整站的离线处理）</li>
+<li>博客一更新，最好能通知粉丝啦（这个理由真是一点都不违和）</li>
+<li>博客是个人的，想怎么搞怎么搞（可以尝试更多的 PWA 特性)</li>
+<li>。。。</li>
+</ul>
+<p>@TODO: 这里需要放一个视频，说明一下 PWA 到底有多强大。</p>
+<h2><span id="怎么为博客加-pwa-特性">怎么为博客加 PWA 特性</span></h2>
+<p>目前我们可以轻松做到为博客加入两点 PWA 特性</p>
+<ul>
+<li>添加到主屏：Manifest</li>
+<li>离线缓存：Service Worker</li>
+</ul>
+<h3><span id="manifestjson">manifest.json</span></h3>
+<p>为了让博客能够添加到桌面，可以在 Hexo 的博客项目下的 <code>/source</code> 目录下增加 <code>manifest.json</code> 文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;  </span><br><span class="line"> &quot;name&quot;: &quot;ZouMiaojiang&quot;,  </span><br><span class="line"> &quot;short_name&quot;: &quot;Peace&quot;,  </span><br><span class="line"> &quot;icons&quot;: \[  </span><br><span class="line"> &#123;  </span><br><span class="line"> &quot;src&quot;: &quot;/img/icons/icon-192x192.png&quot;,  </span><br><span class="line"> &quot;sizes&quot;: &quot;192x192&quot;,  </span><br><span class="line"> &quot;type&quot;: &quot;image/png&quot;  </span><br><span class="line"> &#125;,  </span><br><span class="line"> &#123;  </span><br><span class="line"> &quot;src&quot;: &quot;/img/icons/icon-512x512.png&quot;,  </span><br><span class="line"> &quot;sizes&quot;: &quot;512x512&quot;,  </span><br><span class="line"> &quot;type&quot;: &quot;image/png&quot;  </span><br><span class="line"> &#125;  </span><br><span class="line"> \],  </span><br><span class="line"> &quot;start_url&quot;: &quot;/&quot;,  </span><br><span class="line"> &quot;background_color&quot;: &quot;#ffffff&quot;,  </span><br><span class="line"> &quot;display&quot;: &quot;standalone&quot;,  </span><br><span class="line"> &quot;theme_color&quot;: &quot;#2874f0&quot;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样，你的博客就可以在很多<strong>安卓</strong>机上被添加到桌面了（这个功能目前是需要在用户在系统设置里打开开关的）。iOS safari 目前对 Manifest 的标准支持的比较糟糕。</p>
+<h4><span id="想-ios-safari-也能体验更好的添加到桌面">想 iOS Safari 也能体验更好的添加到桌面</span></h4>
+<p>由于 iOS 上没有对 manifest 标准支持的很好，并且只有 safari 浏览器有添加到主屏（快捷图标）的入口，那我们想 iOS 的添加到桌面的体验更好的话，需要改动 <code>/themes/yourTheme</code> 文件夹下的内容了，为了让每个博客页面在 iOS 的 Safari 浏览器下都能被添加到桌面，需要找到 <code>themes/yourTheme/layout/_partial/head.ejs</code>，然后在 <code>&lt;head&gt;</code> 的里面找个地方塞入如下 html 片段：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!\-\- Add to home screen for Safari on iOS --&gt;  </span><br><span class="line"> &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;  </span><br><span class="line"> &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot;&gt;  </span><br><span class="line"> &lt;meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;Peace&quot;&gt;  </span><br><span class="line"> &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;/img/icons/icon-152x152.png&quot;&gt;  </span><br><span class="line"> &lt;link rel=&quot;shortcut icon&quot; href=&quot;&lt;%= config.root %&gt;img/zoumiaojiang.ico&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>当然，图片路径名称换成自己的就好了。</p>
+<h4><span id="service-worker">Service Worker</span></h4>
+<p>上一篇文章 <a href="https://zoumiaojiang.com/2017/07/30/how-regist-service-worker-for-pwa/" target="_blank" rel="noopener">如何优雅的为 PWA 注册 Service Woker</a> 提到了 Service Worker 的坑，在 Webpack 构建环境下，有 <code>sw-register-webpack-plugin</code> 来帮助解决 Service Worker 的注册问题。那么在 Hexo 的开发环境中，我们也可以借助一个叫做 <code>hexo-service-worker</code> 插件来解决博客的 Service Worker 的注册问题。</p>
+<h4><span id="hexo-servcie-worker">hexo-servcie-worker</span></h4>
+<p>在弄博客的时候，找到了一个 <code>hexo-offline</code> 的 hexo 插件，特别好用，Service Worker 能够正常注册，但是这个插件只是考虑到了基本的 Service Worker 的文件生成和注册，没有考虑到更新的实时性、多个页面注册 Service Worker 等问题，所以我就自己写了个 <a href="https://github.com/zoumiaojiang/hexo-service-worker" target="_blank" rel="noopener">hexo-service-worker</a> 的插件。</p>
+<blockquote>
+<p>其中有部分 sw-precache 相关的内容是参考 <code>hexo-offline</code> 插件的，表示感谢🙏。</p>
+</blockquote>
+<p>使用这个插件很简单，首先是安装插件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-service-worker</span><br></pre></td></tr></table></figure>
+<p>然后修改 <code>_config.yml</code> 让插件生效，通常我们的配置如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">\# service worker  </span><br><span class="line">service_worker:  </span><br><span class="line"> maximumFileSizeToCacheInBytes: 5242880  </span><br><span class="line"> staticFileGlobs:  </span><br><span class="line"> - public/**/*.&#123;js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2&#125;  </span><br><span class="line"> stripPrefix: public  </span><br><span class="line"> verbose: true  </span><br><span class="line"> runtimeCaching:  </span><br><span class="line"> \- urlPattern: /*  </span><br><span class="line"> handler: cacheFirst  </span><br><span class="line"> options:  </span><br><span class="line"> origin: cdn.a.org  </span><br><span class="line"> \- urlPattern: /*  </span><br><span class="line"> handler: cacheFirst  </span><br><span class="line"> options:  </span><br><span class="line"> origin: cdn.b.com</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意：</p>
+<p>其中 <code>runtimeCaching</code> 的配置是专门针对 <strong>第三方 CDN 资源(非 hexo 本地维护的静态资源)</strong> 的缓存的配置。</p>
+</blockquote>
+<p>Service Worker 的生效必须依赖 HTTPS 的，想要对 Service Worker 有具体的了解可以 <a href="https://lavas.baidu.com/doc/offline-and-cache-loading/service-worker/service-worker-introduction" target="_blank" rel="noopener">戳这</a> 。</p>
+
+
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                </ul>
+
+                <br>
+
+                <!--打赏-->
+                
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                
+                    <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div>
+                    <!--  css & js -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+                
+                <!--分享-->
+                <br>
+
+                <!-- require APlayer -->
+                
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+
+            </div>
+
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+  
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">HTTPS &amp; HTTP/2</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">构建 AMP</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">引入 hexo-generator-amp 插件</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">配置 _config.yml</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">将 AMP 页面提交 Google 收录</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">添加 PWA 特性</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">为什么要 PWA</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">怎么为博客加 PWA 特性</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.2.1.</span> <span class="toc-nav-text">manifest.json</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.2.1.1.</span> <span class="toc-nav-text">想 iOS Safari 也能体验更好的添加到桌面</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.2.1.2.</span> <span class="toc-nav-text">Service Worker</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.2.1.3.</span> <span class="toc-nav-text">hexo-servcie-worker</span></a></li></ol></li></ol></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
+                        
+                          <a class="tag" href="/tags/#blog" title="blog">blog</a>
+                        
+                          <a class="tag" href="/tags/#PWA" title="PWA">PWA</a>
+                        
+                          <a class="tag" href="/tags/#AMP" title="AMP">AMP</a>
+                        
+                          <a class="tag" href="/tags/#HTTPS" title="HTTPS">HTTPS</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="https://www.cnblogs.com/mingweiyard/" target="_blank">博客园 王明伟</a></li>
+                    
+                        <li><a href="https://weibo.com/u/3949419319" target="_blank">新浪微博 王明伟</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+<!-- chrome Firefox 中文锚点定位失效-->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<!-- smooth scroll behavior polyfill  -->
+<script type="text/javascript" src="/js/smoothscroll.js"></script>
+<script>
+        $('#toc').on('click','a',function(a){
+            // var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
+            // console.log(window.navigator.userAgent,isChrome)
+                // if(isChrome) {
+                    // console.log(a.currentTarget.outerHTML);
+                    // console.log($(a.currentTarget).attr("href"));
+                    //跳转到指定锚点
+                    // document.getElementById(a.target.innerText.toLowerCase()).scrollIntoView(true);
+                    document.getElementById($(a.currentTarget).attr("href").replace("#","")).scrollIntoView({behavior: 'smooth' });
+                // }
+        })
+</script>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/FIGHTING-TOP">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; WangMingwei 2019
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://fighting-top.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-148144474-1';
+    var _gaDomain = 'https://fighting-top.github.io/';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = '2db0eaa938a47c0517b5d408d4165198';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="https://fighting-top.github.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
