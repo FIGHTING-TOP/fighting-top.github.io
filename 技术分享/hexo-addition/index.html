@@ -8,7 +8,7 @@
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="大音希声，大象无形">
-    <meta name="keyword" content="undefined">
+    <meta name="keyword" content>
 <!--    <link rel="shortcut icon" href="/img/ironman-draw.png">-->
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -220,7 +220,7 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h1><span id="https-amp-http2">HTTPS &amp; HTTP/2</span></h1>
+                <h1><a href="#https-http2"></a>HTTPS &amp; HTTP/2</h1>
 <p>现在是 2019 年了，网站不是 HTTPS 和 HTTP/2 的感觉脱离时代了。HTTPS 已经不是因为安全方面的问题来考虑的了，而是后面所讲到的 PWA 里面很多最新的 HTML5 API 都是要求在 HTTPS 环境下才能正常工作的，所以要想让我们的博客更加的完美，必须要提供 HTTPS 环境。</p>
 <p>可是，我并没有主机啊，没有服务器，怎么配证书？有主机的土豪的 HTTPS 证书可以通过 <a href="https://letsencrypt.org/" target="_blank" rel="noopener">Let’s Encrypt</a> 获取免费的，这个地方不深入讲了，可以参考 <a href="https://lavas.baidu.com/guide/vue/doc/vue/advanced/https-deploy" target="_blank" rel="noopener">HTTPS 环境部署</a>。</p>
 <p>我们今天介绍另一个免费的东西，不用服务器配置证书，通过 DNS 代理的形式，直接可以做到 HTTPS &amp; HTTP/2 接入，这个东西叫 <a href="https://www.cloudflare.com/" target="_blank" rel="noopener">cloudflare</a></p>
@@ -237,25 +237,25 @@
 <blockquote>
 <p>cloudflare 的配置有很多，可以在后台进行配置，SSL 需要选择 <code>FULL</code>, 并且设置 <code>HTTP REWRITE</code> 让站点能自动从 HTTP 重定向到 HTTPS。还有很多有用的配置，大家可以自己把玩。</p>
 </blockquote>
-<h1><span id="构建-amp">构建 AMP</span></h1>
+<h1><a href="#amp"></a>构建 AMP</h1>
 <p><a href="https://www.ampproject.org/zh_cn/learn/overview/" target="_blank" rel="noopener">AMP</a> 是 Google 推出的一种网页加速的标准，通过这种标准，可以使你的站点在 Google 搜索结果页（这里是一个忧伤的故事，但是这并不影响我们折腾博客的激情）之后的跳转变得速度超快，具体可以详情见 AMP 的官网，Google 还会对 AMP 的站点有一定的调权，也就是说，如果你的博客提供了 AMP 的页面，将会被 Google 更容易抓取和优先展现，并且能够在 Google 的搜索结果页秒开。</p>
 <p>并且由于 AMP 页面的无 block 的处理，让用户在单独访问你的 AMP 页面的时候也有秒开的体验。还是很懵逼？什么是 AMP？其实就是一个 HTML 页面，知识遵守 AMP 规范的页面，就想你现在在看的这篇博文，就有 <a href="./amp">AMP 版本</a>。</p>
 <p>那么如何让我们的博客能支持 AMP 呢？Hexo 社区有一个叫做 <code>hexo-generator-amp</code> 的插件可以干这个事情。</p>
-<h2><span id="引入-hexo-generator-amp-插件">引入 hexo-generator-amp 插件</span></h2>
+<h2 id="引入-hexo-generator-amp-插件"><a href="#hexo-generator-amp"></a>引入 hexo-generator-amp 插件</h2>
 <p>可以使用 Hexo 的 <code>hexo-generator-amp</code> 插件来帮助我们构建出 AMP 的页面</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\# 在 hexo 博客项目的根目录执行下面的命令  </span><br><span class="line">npm install --save hexo-generator-amp</span><br></pre></td></tr></table></figure>
 <p>此时，博客已经具备生成 AMP 页面的基础了，由于 AMP 是一套独立的页面，<code>hexo-generator-amp</code> 插件只会对文章页面生成 AMP 页面，要想验证，只需要在原本文章的 URL 的基础上在后面加上 <code>/amp</code> 即可。</p>
-<h2><span id="配置-_configyml">配置 _config.yml</span></h2>
+<h2 id="配置-config-yml"><a href="#_configyml-1"></a>配置 _config.yml</h2>
 <p><code>hexo-generator-amp</code> 插件是需要从 <code>_config.yml</code> 中读取配置才行，配置如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">\# amp config  </span><br><span class="line">generator_amp:  </span><br><span class="line"> templateDir:  amp-template  </span><br><span class="line"> assetDistDir: amp-dist  </span><br><span class="line"> logo:  </span><br><span class="line"> path: sample/sample-logo.png  </span><br><span class="line"> width: 600  </span><br><span class="line"> height: 60  </span><br><span class="line"> substituteTitleImage:   </span><br><span class="line"> path: sample/sample-substituteTitleImage.png  </span><br><span class="line"> width: 1024  </span><br><span class="line"> height: 800  </span><br><span class="line"> warningLog: false   \# To display warning, please set true.</span><br></pre></td></tr></table></figure>
 <p>其中，amp-template 是指明渲染 AMP 页面时候所使用的渲染模版，这种配置表明 AMP 是有一套自己的 theme, 如果想改变默认的 AMP 主题或者其他配置，可以对 amp-template 里面的内容进行二次开发。</p>
-<h2><span id="将-amp-页面提交-google-收录">将 AMP 页面提交 Google 收录</span></h2>
+<h2 id="将-amp-页面提交-google-收录"><a href="#amp-google"></a>将 AMP 页面提交 Google 收录</h2>
 <p>目前 AMP 只能被 Google 搜索引擎所解析执行，所以在我们每写完一篇博客的时候，可以将生成的 AMP URL 提交给 Google 收录（虽然这是一个忧伤的故事，但是能被外国友人轻快速搜索到并且阅读体验好，也是蛮不错的一个自我安慰）。</p>
 <p>颇为无奈的抛出一个你可能需要梯子才能够得着的 <a href="https://www.google.com/webmasters/tools/submit-url?hl=zh-CN&amp;pli=1" target="_blank" rel="noopener">Google 的收录入口</a> 。</p>
-<h1><span id="添加-pwa-特性">添加 PWA 特性</span></h1>
+<h1><a href="#pwa"></a>添加 PWA 特性</h1>
 <hr>
 <p>PWA 是一种渐进式的 Web App, 我们的博客其实就是一个 Web App, 渐进式的，就是慢慢来，一步一步的用一些 HTML5 的最新 API 的实现将我们的站点的用户体验做到极致。</p>
-<h2><span id="为什么要-pwa">为什么要 PWA</span></h2>
+<h2 id="为什么要-pwa"><a href="#pwa-1"></a>为什么要 PWA</h2>
 <p>博客站点是最适合改造成 PWA 的站点了，博客具有这么几个特点：</p>
 <ul>
 <li>内容更新不频繁，静态资源可能很久很久很久都不会更新（特别适合做离线缓存）</li>
@@ -265,23 +265,23 @@
 <li>。。。</li>
 </ul>
 <p>@TODO: 这里需要放一个视频，说明一下 PWA 到底有多强大。</p>
-<h2><span id="怎么为博客加-pwa-特性">怎么为博客加 PWA 特性</span></h2>
+<h2 id="怎么为博客加-pwa-特性"><a href="#pwa-2"></a>怎么为博客加 PWA 特性</h2>
 <p>目前我们可以轻松做到为博客加入两点 PWA 特性</p>
 <ul>
 <li>添加到主屏：Manifest</li>
 <li>离线缓存：Service Worker</li>
 </ul>
-<h3><span id="manifestjson">manifest.json</span></h3>
+<h3 id="manifest-json"><a href="#manifestjson"></a>manifest.json</h3>
 <p>为了让博客能够添加到桌面，可以在 Hexo 的博客项目下的 <code>/source</code> 目录下增加 <code>manifest.json</code> 文件</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;  </span><br><span class="line"> &quot;name&quot;: &quot;ZouMiaojiang&quot;,  </span><br><span class="line"> &quot;short_name&quot;: &quot;Peace&quot;,  </span><br><span class="line"> &quot;icons&quot;: \[  </span><br><span class="line"> &#123;  </span><br><span class="line"> &quot;src&quot;: &quot;/img/icons/icon-192x192.png&quot;,  </span><br><span class="line"> &quot;sizes&quot;: &quot;192x192&quot;,  </span><br><span class="line"> &quot;type&quot;: &quot;image/png&quot;  </span><br><span class="line"> &#125;,  </span><br><span class="line"> &#123;  </span><br><span class="line"> &quot;src&quot;: &quot;/img/icons/icon-512x512.png&quot;,  </span><br><span class="line"> &quot;sizes&quot;: &quot;512x512&quot;,  </span><br><span class="line"> &quot;type&quot;: &quot;image/png&quot;  </span><br><span class="line"> &#125;  </span><br><span class="line"> \],  </span><br><span class="line"> &quot;start_url&quot;: &quot;/&quot;,  </span><br><span class="line"> &quot;background_color&quot;: &quot;#ffffff&quot;,  </span><br><span class="line"> &quot;display&quot;: &quot;standalone&quot;,  </span><br><span class="line"> &quot;theme_color&quot;: &quot;#2874f0&quot;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这样，你的博客就可以在很多<strong>安卓</strong>机上被添加到桌面了（这个功能目前是需要在用户在系统设置里打开开关的）。iOS safari 目前对 Manifest 的标准支持的比较糟糕。</p>
-<h4><span id="想-ios-safari-也能体验更好的添加到桌面">想 iOS Safari 也能体验更好的添加到桌面</span></h4>
+<h4 id="想-ios-safari-也能体验更好的添加到桌面"><a href="#ios-safari"></a>想 iOS Safari 也能体验更好的添加到桌面</h4>
 <p>由于 iOS 上没有对 manifest 标准支持的很好，并且只有 safari 浏览器有添加到主屏（快捷图标）的入口，那我们想 iOS 的添加到桌面的体验更好的话，需要改动 <code>/themes/yourTheme</code> 文件夹下的内容了，为了让每个博客页面在 iOS 的 Safari 浏览器下都能被添加到桌面，需要找到 <code>themes/yourTheme/layout/_partial/head.ejs</code>，然后在 <code>&lt;head&gt;</code> 的里面找个地方塞入如下 html 片段：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!\-\- Add to home screen for Safari on iOS --&gt;  </span><br><span class="line"> &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;  </span><br><span class="line"> &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot;&gt;  </span><br><span class="line"> &lt;meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;Peace&quot;&gt;  </span><br><span class="line"> &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;/img/icons/icon-152x152.png&quot;&gt;  </span><br><span class="line"> &lt;link rel=&quot;shortcut icon&quot; href=&quot;&lt;%= config.root %&gt;img/zoumiaojiang.ico&quot;&gt;</span><br></pre></td></tr></table></figure>
 <p>当然，图片路径名称换成自己的就好了。</p>
-<h4><span id="service-worker">Service Worker</span></h4>
+<h4 id="service-worker"><a href="#service-worker"></a>Service Worker</h4>
 <p>上一篇文章 <a href="https://zoumiaojiang.com/2017/07/30/how-regist-service-worker-for-pwa/" target="_blank" rel="noopener">如何优雅的为 PWA 注册 Service Woker</a> 提到了 Service Worker 的坑，在 Webpack 构建环境下，有 <code>sw-register-webpack-plugin</code> 来帮助解决 Service Worker 的注册问题。那么在 Hexo 的开发环境中，我们也可以借助一个叫做 <code>hexo-service-worker</code> 插件来解决博客的 Service Worker 的注册问题。</p>
-<h4><span id="hexo-servcie-worker">hexo-servcie-worker</span></h4>
+<h4 id="hexo-servcie-worker"><a href="#hexo-servcie-worker"></a>hexo-servcie-worker</h4>
 <p>在弄博客的时候，找到了一个 <code>hexo-offline</code> 的 hexo 插件，特别好用，Service Worker 能够正常注册，但是这个插件只是考虑到了基本的 Service Worker 的文件生成和注册，没有考虑到更新的实时性、多个页面注册 Service Worker 等问题，所以我就自己写了个 <a href="https://github.com/zoumiaojiang/hexo-service-worker" target="_blank" rel="noopener">hexo-service-worker</a> 的插件。</p>
 <blockquote>
 <p>其中有部分 sw-precache 相关的内容是参考 <code>hexo-offline</code> 插件的，表示感谢🙏。</p>
@@ -350,7 +350,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">HTTPS &amp; HTTP/2</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">构建 AMP</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">引入 hexo-generator-amp 插件</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">配置 _config.yml</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">将 AMP 页面提交 Google 收录</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">添加 PWA 特性</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">为什么要 PWA</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">怎么为博客加 PWA 特性</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.2.1.</span> <span class="toc-nav-text">manifest.json</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.2.1.1.</span> <span class="toc-nav-text">想 iOS Safari 也能体验更好的添加到桌面</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.2.1.2.</span> <span class="toc-nav-text">Service Worker</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.2.1.3.</span> <span class="toc-nav-text">hexo-servcie-worker</span></a></li></ol></li></ol></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">HTTPS &amp; HTTP/2</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">构建 AMP</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#引入-hexo-generator-amp-插件"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">引入 hexo-generator-amp 插件</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#配置-config-yml"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">配置 _config.yml</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#将-amp-页面提交-google-收录"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">将 AMP 页面提交 Google 收录</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">添加 PWA 特性</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#为什么要-pwa"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">为什么要 PWA</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#怎么为博客加-pwa-特性"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">怎么为博客加 PWA 特性</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#manifest-json"><span class="toc-nav-number">3.2.1.</span> <span class="toc-nav-text">manifest.json</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#想-ios-safari-也能体验更好的添加到桌面"><span class="toc-nav-number">3.2.1.1.</span> <span class="toc-nav-text">想 iOS Safari 也能体验更好的添加到桌面</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#service-worker"><span class="toc-nav-number">3.2.1.2.</span> <span class="toc-nav-text">Service Worker</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#hexo-servcie-worker"><span class="toc-nav-number">3.2.1.3.</span> <span class="toc-nav-text">hexo-servcie-worker</span></a></li></ol></li></ol></li></ol></li></ol>
         
         </div>
       </aside>
@@ -446,21 +446,6 @@
 
 <!-- chrome Firefox 中文锚点定位失效-->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<!-- smooth scroll behavior polyfill  -->
-<script type="text/javascript" src="/js/smoothscroll.js"></script>
-<script>
-        $('#toc').on('click','a',function(a){
-            // var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
-            // console.log(window.navigator.userAgent,isChrome)
-                // if(isChrome) {
-                    // console.log(a.currentTarget.outerHTML);
-                    // console.log($(a.currentTarget).attr("href"));
-                    //跳转到指定锚点
-                    // document.getElementById(a.target.innerText.toLowerCase()).scrollIntoView(true);
-                    document.getElementById($(a.currentTarget).attr("href").replace("#","")).scrollIntoView({behavior: 'smooth' });
-                // }
-        })
-</script>
 
 
     <!-- Footer -->
