@@ -31,7 +31,7 @@
     </url>
 
     <url>
-        <loc>https://fighting-top.github.io/article/Windows%E6%9B%B4%E6%94%B9%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E9%94%AE%E7%9B%98%E5%8A%9F%E8%83%BD%E9%94%AE-%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5%EF%BC%81/</loc>
+        <loc>https://fighting-top.github.io/article/input-event%E5%85%BC%E5%AE%B9%E6%80%A7-%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5%EF%BC%81/</loc>
         <lastmod>2020-01-09T07:53:23.320Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -47,23 +47,15 @@
     </url>
 
     <url>
+        <loc>https://fighting-top.github.io/article/Windows%E6%9B%B4%E6%94%B9%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E9%94%AE%E7%9B%98%E5%8A%9F%E8%83%BD%E9%94%AE-%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5%EF%BC%81/</loc>
+        <lastmod>2020-01-09T07:53:23.320Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://fighting-top.github.io/article/docker%E5%90%AF%E5%8A%A8nginx%E7%9A%84ssl%E9%85%8D%E7%BD%AE-%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5%EF%BC%81/</loc>
-        <lastmod>2020-01-09T07:53:23.320Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://fighting-top.github.io/article/input-event%E5%85%BC%E5%AE%B9%E6%80%A7-%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5%EF%BC%81/</loc>
-        <lastmod>2020-01-09T07:53:23.320Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://fighting-top.github.io/article/js%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E4%B8%8E%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F-%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5%EF%BC%81/</loc>
         <lastmod>2020-01-09T07:53:23.320Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -80,6 +72,14 @@
 
     <url>
         <loc>https://fighting-top.github.io/article/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%92%8C%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6-%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5%EF%BC%81/</loc>
+        <lastmod>2020-01-09T07:53:23.320Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://fighting-top.github.io/article/js%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E4%B8%8E%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F-%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5%EF%BC%81/</loc>
         <lastmod>2020-01-09T07:53:23.320Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
