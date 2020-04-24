@@ -3,35 +3,63 @@
 
     <url>
         <loc>https://fighting-top.github.io/tags/Hexo/</loc>
-        <lastmod>2020-01-09T06:49:18.160Z</lastmod>
+        <lastmod>2020-04-23T07:52:45.041Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://fighting-top.github.io/tags/blog/</loc>
-        <lastmod>2020-01-09T06:49:18.160Z</lastmod>
+        <lastmod>2020-04-23T07:52:45.041Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://fighting-top.github.io/tags/PWA/</loc>
-        <lastmod>2020-01-09T06:49:18.160Z</lastmod>
+        <lastmod>2020-04-23T07:52:45.041Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://fighting-top.github.io/tags/AMP/</loc>
-        <lastmod>2020-01-09T06:49:18.160Z</lastmod>
+        <lastmod>2020-04-23T07:52:45.041Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://fighting-top.github.io/tags/HTTPS/</loc>
-        <lastmod>2020-01-09T06:49:18.160Z</lastmod>
+        <lastmod>2020-04-23T07:52:45.041Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://fighting-top.github.io/tags/Java/</loc>
+        <lastmod>2020-04-23T08:26:45.837Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://fighting-top.github.io/tags/Socket/</loc>
+        <lastmod>2020-04-23T08:26:45.837Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://fighting-top.github.io/tags/ServerSocket/</loc>
+        <lastmod>2020-04-23T08:26:45.837Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://fighting-top.github.io/tags/TCP%E9%80%9A%E4%BF%A1/</loc>
+        <lastmod>2020-04-23T08:26:45.837Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
