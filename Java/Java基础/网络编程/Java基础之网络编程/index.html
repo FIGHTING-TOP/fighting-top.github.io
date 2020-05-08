@@ -31,7 +31,7 @@
 
 
 
-  <meta name="keywords" content="Java,Socket,ServerSocket,TCP通信,">
+  <meta name="keywords" content="Java,Java基础,网络编程,">
 
 
 
@@ -40,33 +40,33 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1">
 
 
-<meta name="description" content="day11【网络编程】 主要内容  软件架构CS／BS 网络通信三要素 TCP通信 Socket套接字 ServerSocket  教学目标  [ ] 能够辨别UDP和TCP协议特点 [ ] 能够说出TCP协议下两个常用类名称 [ ] 能够编写TCP协议下字符串数据传输程序 [ ] 能够理解TCP协议下文件上传案例 [ ] 能够理解TCP协议下案例2  第一章 网络编程入门 1.1软件结构  C/">
-<meta name="keywords" content="Java,Socket,ServerSocket,TCP通信">
+<meta name="description" content="【网络编程】 主要内容  软件架构CS／BS 网络通信三要素 TCP通信 Socket套接字 ServerSocket  教学目标  [ ] 能够辨别UDP和TCP协议特点 [ ] 能够说出TCP协议下两个常用类名称 [ ] 能够编写TCP协议下字符串数据传输程序 [ ] 能够理解TCP协议下文件上传案例 [ ] 能够理解TCP协议下案例2  第一章 网络编程入门 1.1软件结构  C/S结构 ：">
+<meta name="keywords" content="Java,Java基础,网络编程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java学习—网络编程">
-<meta property="og:url" content="https://fighting-top.github.io/Java/Java学习—网络编程/index.html">
+<meta property="og:title" content="Java基础学习之网络编程">
+<meta property="og:url" content="https://fighting-top.github.io/Java/Java基础/网络编程/Java基础之网络编程/index.html">
 <meta property="og:site_name" content="Tiger&#39;s blog">
-<meta property="og:description" content="day11【网络编程】 主要内容  软件架构CS／BS 网络通信三要素 TCP通信 Socket套接字 ServerSocket  教学目标  [ ] 能够辨别UDP和TCP协议特点 [ ] 能够说出TCP协议下两个常用类名称 [ ] 能够编写TCP协议下字符串数据传输程序 [ ] 能够理解TCP协议下文件上传案例 [ ] 能够理解TCP协议下案例2  第一章 网络编程入门 1.1软件结构  C/">
+<meta property="og:description" content="【网络编程】 主要内容  软件架构CS／BS 网络通信三要素 TCP通信 Socket套接字 ServerSocket  教学目标  [ ] 能够辨别UDP和TCP协议特点 [ ] 能够说出TCP协议下两个常用类名称 [ ] 能够编写TCP协议下字符串数据传输程序 [ ] 能够理解TCP协议下文件上传案例 [ ] 能够理解TCP协议下案例2  第一章 网络编程入门 1.1软件结构  C/S结构 ：">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/1_cs.jpg">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/2_bs.jpg">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/3_tcp_ip.jpg">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/img%5CUDP%E9%80%9A%E4%BF%A1%E5%9B%BE%E8%A7%A3.bmp">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/4_tcp.jpg">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/5_%E7%AE%80%E5%8D%95%E9%80%9A%E4%BF%A1.jpg">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/6_upload.jpg">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/6_upload2.jpg">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/img%5C%E5%A4%8D%E5%88%B6.png">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/img%5C%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE.jpg">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/img%5C%E8%AF%BB%E5%8F%96%E8%AE%BF%E9%97%AE%E4%BF%A1%E6%81%AF.jpg">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/%E6%95%88%E6%9E%9C%E5%9B%BE1.png">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/%E6%95%88%E6%9E%9C%E5%9B%BE2.png">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/img%5CBS%E9%80%9A%E4%BF%A1.bmp">
-<meta property="og:updated_time" content="2020-04-23T08:26:45.837Z">
+<meta property="og:image" content="https://fighting-top.github.io/.io//1_cs.jpg">
+<meta property="og:image" content="https://fighting-top.github.io/.io//2_bs.jpg">
+<meta property="og:image" content="https://fighting-top.github.io/.io//3_tcp_ip.jpg">
+<meta property="og:image" content="https://fighting-top.github.io/.io//img%5CUDP%E9%80%9A%E4%BF%A1%E5%9B%BE%E8%A7%A3.png">
+<meta property="og:image" content="https://fighting-top.github.io/.io//4_tcp.jpg">
+<meta property="og:image" content="https://fighting-top.github.io/.io//5_%E7%AE%80%E5%8D%95%E9%80%9A%E4%BF%A1.jpg">
+<meta property="og:image" content="https://fighting-top.github.io/.io//6_upload.jpg">
+<meta property="og:image" content="https://fighting-top.github.io/.io//6_upload2.jpg">
+<meta property="og:image" content="https://fighting-top.github.io/.io//img%5C%E5%A4%8D%E5%88%B6.png">
+<meta property="og:image" content="https://fighting-top.github.io/.io//img%5C%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE.jpg">
+<meta property="og:image" content="https://fighting-top.github.io/.io//img%5C%E8%AF%BB%E5%8F%96%E8%AE%BF%E9%97%AE%E4%BF%A1%E6%81%AF.jpg">
+<meta property="og:image" content="https://fighting-top.github.io/.io//%E6%95%88%E6%9E%9C%E5%9B%BE1.png">
+<meta property="og:image" content="https://fighting-top.github.io/.io//%E6%95%88%E6%9E%9C%E5%9B%BE2.png">
+<meta property="og:image" content="https://fighting-top.github.io/.io//img%5CBS%E9%80%9A%E4%BF%A1.jpg">
+<meta property="og:updated_time" content="2020-05-08T02:19:30.754Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java学习—网络编程">
-<meta name="twitter:description" content="day11【网络编程】 主要内容  软件架构CS／BS 网络通信三要素 TCP通信 Socket套接字 ServerSocket  教学目标  [ ] 能够辨别UDP和TCP协议特点 [ ] 能够说出TCP协议下两个常用类名称 [ ] 能够编写TCP协议下字符串数据传输程序 [ ] 能够理解TCP协议下文件上传案例 [ ] 能够理解TCP协议下案例2  第一章 网络编程入门 1.1软件结构  C/">
-<meta name="twitter:image" content="https://fighting-top.github.io/Java/Java学习—网络编程/Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/1_cs.jpg">
+<meta name="twitter:title" content="Java基础学习之网络编程">
+<meta name="twitter:description" content="【网络编程】 主要内容  软件架构CS／BS 网络通信三要素 TCP通信 Socket套接字 ServerSocket  教学目标  [ ] 能够辨别UDP和TCP协议特点 [ ] 能够说出TCP协议下两个常用类名称 [ ] 能够编写TCP协议下字符串数据传输程序 [ ] 能够理解TCP协议下文件上传案例 [ ] 能够理解TCP协议下案例2  第一章 网络编程入门 1.1软件结构  C/S结构 ：">
+<meta name="twitter:image" content="https://fighting-top.github.io/.io//1_cs.jpg">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -76,7 +76,7 @@
   };
 </script>
 
-  <title> Java学习—网络编程 | Tiger's blog </title>
+  <title> Java基础学习之网络编程 | Tiger's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -198,7 +198,7 @@
           
           
             
-              Java学习—网络编程
+              Java基础学习之网络编程
             
           
         </h1>
@@ -207,8 +207,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2019-09-17T17:51:00+08:00" content="2019-09-17">
-            2019-09-17
+          <time itemprop="dateCreated" datetime="2020-04-17T17:51:00+08:00" content="2020-04-17">
+            2020-04-17
           </time>
         </span>
 
@@ -219,6 +219,30 @@
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                 <a href="/categories/Java/" itemprop="url" rel="index">
                   <span itemprop="name">Java</span>
+                </a>
+              </span>
+
+              
+              
+                ， 
+              
+
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/Java/Java基础/" itemprop="url" rel="index">
+                  <span itemprop="name">Java基础</span>
+                </a>
+              </span>
+
+              
+              
+                ， 
+              
+
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/Java/Java基础/网络编程/" itemprop="url" rel="index">
+                  <span itemprop="name">网络编程</span>
                 </a>
               </span>
 
@@ -241,7 +265,7 @@
       
 
       
-        <span itemprop="articleBody"><h1>day11【网络编程】</h1>
+        <span itemprop="articleBody"><h1>【网络编程】</h1>
 <h2 id="主要内容">主要内容</h2>
 <ul>
 <li>软件架构CS／BS</li>
@@ -263,9 +287,9 @@
 <ul>
 <li><strong>C/S结构</strong> ：全称为Client/Server结构，是指客户端和服务器结构。常见程序有ＱＱ、迅雷等软件。</li>
 </ul>
-<p><img src="./Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/1_cs.jpg" alt></p>
+<p><img src="/.io//1_cs.jpg" alt></p>
 <p><strong>B/S结构</strong> ：全称为Browser/Server结构，是指浏览器和服务器结构。常见浏览器有谷歌、火狐等。</p>
-<p><img src="./Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/2_bs.jpg" alt></p>
+<p><img src="/.io//2_bs.jpg" alt></p>
 <p>两种架构各有优势，但是无论哪种架构，都离不开网络的支持。<strong>网络编程</strong>，就是在一定的协议下，实现两台计算机的通信的程序。</p>
 <h2 id="1-2-网络通信协议">1.2 网络通信协议</h2>
 <ul>
@@ -274,7 +298,7 @@
 <ul>
 <li><strong>TCP/IP协议：</strong> 传输控制协议/因特网互联协议( Transmission Control Protocol/Internet Protocol)，是Internet最基本、最广泛的协议。它定义了计算机如何连入因特网，以及数据如何在它们之间传输的标准。它的内部包含一系列的用于处理数据通信的协议，并采用了4层的分层模型，每一层都呼叫它的下一层所提供的协议来完成自己的需求。</li>
 </ul>
-<p><img src="./Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/3_tcp_ip.jpg" alt></p>
+<p><img src="/.io//3_tcp_ip.jpg" alt></p>
 <p>上图中，TCP/IP协议中的四层分别是应用层、传输层、网络层和链路层，每层分别负责不同的通信功能。<br>
 链路层：链路层是用于定义物理传输通道，通常是对某些网络连接设备的驱动协议，例如针对光纤、网线提供的驱动。<br>
 网络层：网络层是整个TCP/IP协议的核心，它主要用于将传输的数据进行分组，将分组数据发送到目标计算机或者网络。<br>
@@ -290,7 +314,7 @@
 <p>但是在使用UDP协议传送数据时，由于UDP的面向无连接性，不能保证数据的完整性，因此在传输重要数据时不建议使用UDP协议。UDP的交换过程如下图所示。</p>
 </li>
 </ul>
-<p><img src="img%5CUDP%E9%80%9A%E4%BF%A1%E5%9B%BE%E8%A7%A3.bmp" alt="UDP通信图解"></p>
+<p><img src="/.io//img%5CUDP%E9%80%9A%E4%BF%A1%E5%9B%BE%E8%A7%A3.png" alt="UDP通信图解"></p>
 <p>特点:数据被限制在64kb以内，超出这个范围就不能发送了。</p>
 <p>数据报(Datagram):网络传输的基本单位</p>
 <ul>
@@ -308,7 +332,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="./Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/4_tcp.jpg" alt></p>
+<p><img src="/.io//4_tcp.jpg" alt></p>
 <p>​    完成三次握手，连接建立后，客户端和服务器就可以开始进行数据传输了。由于这种面向连接的特性，TCP协议可以保证传输数据的安全，所以应用十分广泛，例如下载文件、浏览网页等。</p>
 <h2 id="1-4-网络编程三要素">1.4 网络编程三要素</h2>
 <h3 id="协议">协议</h3>
@@ -337,7 +361,7 @@
 <ul>
 <li>检查网络是否连通，在控制台输入：</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ping 空格 IP地址</span><br><span class="line">ping <span class="number">220.181</span>.57.216</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ping 空格 IP地址</span><br><span class="line">ping <span class="number">220.181</span><span class="number">.57</span><span class="number">.216</span></span><br></pre></td></tr></table></figure>
 <p><strong>特殊的IP地址</strong></p>
 <ul>
 <li>本机IP地址：<code>127.0.0.1</code>、<code>localhost</code> 。</li>
@@ -429,7 +453,7 @@
 <blockquote>
 <p>到此，客户端向服务端发送数据成功。</p>
 </blockquote>
-<p><img src="./Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/5_%E7%AE%80%E5%8D%95%E9%80%9A%E4%BF%A1.jpg" alt></p>
+<p><img src="/.io//5_%E7%AE%80%E5%8D%95%E9%80%9A%E4%BF%A1.jpg" alt></p>
 <blockquote>
 <p>自此，服务端向客户端回写数据。</p>
 </blockquote>
@@ -457,7 +481,7 @@
 <li>【服务端】输入流，读取文件数据到服务端程序。</li>
 <li>【服务端】输出流，写出文件数据到服务器硬盘中。</li>
 </ol>
-<p><img src="./Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/6_upload.jpg" alt></p>
+<p><img src="/.io//6_upload.jpg" alt></p>
 <h4 id="基本实现">基本实现</h4>
 <p><strong>服务端实现：</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FileUpload_Server</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"服务器 启动.....  "</span>);</span><br><span class="line">        <span class="comment">// 1. 创建服务端ServerSocket</span></span><br><span class="line">      	ServerSocket serverSocket = <span class="keyword">new</span> ServerSocket(<span class="number">6666</span>);</span><br><span class="line">  		<span class="comment">// 2. 建立连接 </span></span><br><span class="line">        Socket accept = serverSocket.accept();</span><br><span class="line">      	<span class="comment">// 3. 创建流对象</span></span><br><span class="line">      	<span class="comment">// 3.1 获取输入流,读取文件数据</span></span><br><span class="line">        BufferedInputStream bis = <span class="keyword">new</span> BufferedInputStream(accept.getInputStream());</span><br><span class="line">        <span class="comment">// 3.2 创建输出流,保存到本地 .</span></span><br><span class="line">        BufferedOutputStream bos = <span class="keyword">new</span> BufferedOutputStream(<span class="keyword">new</span> FileOutputStream(<span class="string">"copy.jpg"</span>));</span><br><span class="line">		<span class="comment">// 4. 读写数据</span></span><br><span class="line">        <span class="keyword">byte</span>[] b = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span> * <span class="number">8</span>];</span><br><span class="line">        <span class="keyword">int</span> len;</span><br><span class="line">        <span class="keyword">while</span> ((len = bis.read(b)) != -<span class="number">1</span>) &#123;</span><br><span class="line">            bos.write(b, <span class="number">0</span>, len);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//5. 关闭 资源</span></span><br><span class="line">        bos.close();</span><br><span class="line">        bis.close();</span><br><span class="line">        accept.close();</span><br><span class="line">        System.out.println(<span class="string">"文件上传已保存"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -493,7 +517,7 @@
 <li>【服务端】获取输出流，回写数据。</li>
 <li>【客户端】获取输入流，解析回写数据。</li>
 </ol>
-<p><img src="./Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/6_upload2.jpg" alt></p>
+<p><img src="/.io//6_upload2.jpg" alt></p>
 <h4 id="回写实现">回写实现</h4>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FileUpload_Server</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"服务器 启动.....  "</span>);</span><br><span class="line">        <span class="comment">// 1. 创建服务端ServerSocket</span></span><br><span class="line">        ServerSocket serverSocket = <span class="keyword">new</span> ServerSocket(<span class="number">6666</span>);</span><br><span class="line">        <span class="comment">// 2. 循环接收,建立连接</span></span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">            Socket accept = serverSocket.accept();</span><br><span class="line">          	<span class="comment">/*</span></span><br><span class="line"><span class="comment">          	3. socket对象交给子线程处理,进行读写操作</span></span><br><span class="line"><span class="comment">               Runnable接口中,只有一个run方法,使用lambda表达式简化格式</span></span><br><span class="line"><span class="comment">            */</span></span><br><span class="line">            <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">                <span class="keyword">try</span> (</span><br><span class="line">                    <span class="comment">//3.1 获取输入流对象</span></span><br><span class="line">                    BufferedInputStream bis = <span class="keyword">new</span> BufferedInputStream(accept.getInputStream());</span><br><span class="line">                    <span class="comment">//3.2 创建输出流对象, 保存到本地 .</span></span><br><span class="line">                    FileOutputStream fis = <span class="keyword">new</span> FileOutputStream(System.currentTimeMillis() + <span class="string">".jpg"</span>);</span><br><span class="line">                    BufferedOutputStream bos = <span class="keyword">new</span> BufferedOutputStream(fis);</span><br><span class="line">                ) &#123;</span><br><span class="line">                    <span class="comment">// 3.3 读写数据</span></span><br><span class="line">                    <span class="keyword">byte</span>[] b = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span> * <span class="number">8</span>];</span><br><span class="line">                    <span class="keyword">int</span> len;</span><br><span class="line">                    <span class="keyword">while</span> ((len = bis.read(b)) != -<span class="number">1</span>) &#123;</span><br><span class="line">                        bos.write(b, <span class="number">0</span>, len);</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    <span class="comment">// 4.=======信息回写===========================</span></span><br><span class="line">                    System.out.println(<span class="string">"back ........"</span>);</span><br><span class="line">                    OutputStream out = accept.getOutputStream();</span><br><span class="line">                    out.write(<span class="string">"上传成功"</span>.getBytes());</span><br><span class="line">                    out.close();</span><br><span class="line">                    <span class="comment">//================================</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">//5. 关闭 资源</span></span><br><span class="line">                    bos.close();</span><br><span class="line">                    bis.close();</span><br><span class="line">                    accept.close();</span><br><span class="line">                    System.out.println(<span class="string">"文件上传已保存"</span>);</span><br><span class="line">                &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;).start();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>客户端实现：</strong></p>
@@ -505,16 +529,16 @@
 <li>
 <p>准备页面数据，web文件夹。</p>
 <p>复制到我们Module中，比如复制到day08中</p>
-<p><img src="img%5C%E5%A4%8D%E5%88%B6.png" alt></p>
+<p><img src="/.io//img%5C%E5%A4%8D%E5%88%B6.png" alt></p>
 </li>
 <li>
 <p>我们模拟服务器端，ServerSocket类监听端口，使用浏览器访问</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    	ServerSocket server = <span class="keyword">new</span> ServerSocket(<span class="number">8000</span>);</span><br><span class="line">    	Socket socket = server.accept();</span><br><span class="line">    	InputStream in = socket.getInputStream();</span><br><span class="line">   	    <span class="keyword">byte</span>[] bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>];</span><br><span class="line">    	<span class="keyword">int</span> len = in.read(bytes);</span><br><span class="line">    	System.out.println(<span class="keyword">new</span> String(bytes,<span class="number">0</span>,len));</span><br><span class="line">    	socket.close();</span><br><span class="line">    	server.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="img%5C%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE.jpg" alt></p>
+<p><img src="/.io//img%5C%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE.jpg" alt></p>
 </li>
 <li>
 <p>服务器程序中字节输入流可以读取到浏览器发来的请求信息</p>
-<p><img src="img%5C%E8%AF%BB%E5%8F%96%E8%AE%BF%E9%97%AE%E4%BF%A1%E6%81%AF.jpg" alt></p>
+<p><img src="/.io//img%5C%E8%AF%BB%E5%8F%96%E8%AE%BF%E9%97%AE%E4%BF%A1%E6%81%AF.jpg" alt></p>
 </li>
 </ol>
 <p>GET/web/index.html HTTP/1.1是浏览器的请求消息。/web/index.html为浏览器想要请求的服务器端的资源,使用字符串切割方式获取到请求的资源。</p>
@@ -526,7 +550,7 @@
 <ul>
 <li><strong>火狐</strong></li>
 </ul>
-<p><img src="./Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/%E6%95%88%E6%9E%9C%E5%9B%BE1.png" alt></p>
+<p><img src="/.io//%E6%95%88%E6%9E%9C%E5%9B%BE1.png" alt></p>
 <blockquote>
 <p>小贴士：不同的浏览器，内核不一样，解析效果有可能不一样。</p>
 </blockquote>
@@ -534,8 +558,8 @@
 <p>浏览器工作原理是遇到图片会开启一个线程进行单独的访问,因此在服务器端加入线程技术。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ServerDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        ServerSocket server = <span class="keyword">new</span> ServerSocket(<span class="number">8888</span>);</span><br><span class="line">        <span class="keyword">while</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">            Socket socket = server.accept();</span><br><span class="line">            <span class="keyword">new</span> Thread(<span class="keyword">new</span> Web(socket)).start();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Web</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</span><br><span class="line">        <span class="keyword">private</span> Socket socket;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Web</span><span class="params">(Socket socket)</span></span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.socket=socket;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">try</span>&#123;</span><br><span class="line">                <span class="comment">//转换流,读取浏览器请求第一行</span></span><br><span class="line">                BufferedReader readWb = <span class="keyword">new</span></span><br><span class="line">                        BufferedReader(<span class="keyword">new</span> InputStreamReader(socket.getInputStream()));</span><br><span class="line">                String requst = readWb.readLine();</span><br><span class="line">                <span class="comment">//取出请求资源的路径</span></span><br><span class="line">                String[] strArr = requst.split(<span class="string">" "</span>);</span><br><span class="line">                System.out.println(Arrays.toString(strArr));</span><br><span class="line">                String path = strArr[<span class="number">1</span>].substring(<span class="number">1</span>);</span><br><span class="line">                System.out.println(path);</span><br><span class="line"></span><br><span class="line">                FileInputStream fis = <span class="keyword">new</span> FileInputStream(path);</span><br><span class="line">                System.out.println(fis);</span><br><span class="line">                <span class="keyword">byte</span>[] bytes= <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>];</span><br><span class="line">                <span class="keyword">int</span> len = <span class="number">0</span> ;</span><br><span class="line">                <span class="comment">//向浏览器 回写数据</span></span><br><span class="line">                OutputStream out = socket.getOutputStream();</span><br><span class="line">                out.write(<span class="string">"HTTP/1.1 200 OK\r\n"</span>.getBytes());</span><br><span class="line">                out.write(<span class="string">"Content-Type:text/html\r\n"</span>.getBytes());</span><br><span class="line">                out.write(<span class="string">"\r\n"</span>.getBytes());</span><br><span class="line">                <span class="keyword">while</span>((len = fis.read(bytes))!=-<span class="number">1</span>)&#123;</span><br><span class="line">                    out.write(bytes,<span class="number">0</span>,len);</span><br><span class="line">                &#125;</span><br><span class="line">                fis.close();</span><br><span class="line">                out.close();</span><br><span class="line">                readWb.close();</span><br><span class="line">                socket.close();</span><br><span class="line">            &#125;<span class="keyword">catch</span>(Exception ex)&#123;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>访问效果：</strong></p>
-<p><img src="./Java%E5%AD%A6%E4%B9%A0%E2%80%94%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/%E6%95%88%E6%9E%9C%E5%9B%BE2.png" alt>图解：</p>
-<p><img src="img%5CBS%E9%80%9A%E4%BF%A1.bmp" alt></p>
+<p><img src="/.io//%E6%95%88%E6%9E%9C%E5%9B%BE2.png" alt>图解：</p>
+<p><img src="/.io//img%5CBS%E9%80%9A%E4%BF%A1.jpg" alt></p>
 </span>
       
     </div>
@@ -546,11 +570,9 @@
           
             <a href="/tags/Java/" rel="tag">#Java</a>
           
-            <a href="/tags/Socket/" rel="tag">#Socket</a>
+            <a href="/tags/Java基础/" rel="tag">#Java基础</a>
           
-            <a href="/tags/ServerSocket/" rel="tag">#ServerSocket</a>
-          
-            <a href="/tags/TCP通信/" rel="tag">#TCP通信</a>
+            <a href="/tags/网络编程/" rel="tag">#网络编程</a>
           
         </div>
       
@@ -559,11 +581,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/Hexo/hexo-addition/" rel="prev">hexo博客发布</a>
+              <a href="/Java/Java基础/Java基础之缓冲流、转换流、序列化流、打印流/" rel="prev">Java基础学习之缓冲流、转换流、序列化流</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/Hexo/hexo-addition/" rel="next">hexo博客发布</a>
             
           </div>
         </div>
@@ -627,21 +651,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">8</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -669,7 +693,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">day11【网络编程】</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#主要内容"><span class="nav-number">1.1.</span> <span class="nav-text">主要内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#教学目标"><span class="nav-number">1.2.</span> <span class="nav-text">教学目标</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">第一章 网络编程入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1软件结构"><span class="nav-number">2.1.</span> <span class="nav-text">1.1软件结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-网络通信协议"><span class="nav-number">2.2.</span> <span class="nav-text">1.2 网络通信协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-协议分类"><span class="nav-number">2.3.</span> <span class="nav-text">1.3 协议分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-网络编程三要素"><span class="nav-number">2.4.</span> <span class="nav-text">1.4 网络编程三要素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#协议"><span class="nav-number">2.4.1.</span> <span class="nav-text">协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ip地址"><span class="nav-number">2.4.2.</span> <span class="nav-text">IP地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#端口号"><span class="nav-number">2.4.3.</span> <span class="nav-text">端口号</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">3.</span> <span class="nav-text">第二章 TCP通信程序</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-概述"><span class="nav-number">3.1.</span> <span class="nav-text">2.1 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-socket类"><span class="nav-number">3.2.</span> <span class="nav-text">2.2 Socket类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#构造方法"><span class="nav-number">3.2.1.</span> <span class="nav-text">构造方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#成员方法"><span class="nav-number">3.2.2.</span> <span class="nav-text">成员方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-serversocket类"><span class="nav-number">3.3.</span> <span class="nav-text">2.3 ServerSocket类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#构造方法-v2"><span class="nav-number">3.3.1.</span> <span class="nav-text">构造方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#成员方法-v2"><span class="nav-number">3.3.2.</span> <span class="nav-text">成员方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-简单的tcp网络程序"><span class="nav-number">3.4.</span> <span class="nav-text">2.4 简单的TCP网络程序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#tcp通信分析图解"><span class="nav-number">3.4.1.</span> <span class="nav-text">TCP通信分析图解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#客户端向服务器发送数据"><span class="nav-number">3.4.2.</span> <span class="nav-text">客户端向服务器发送数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器向客户端回写数据"><span class="nav-number">3.4.3.</span> <span class="nav-text">服务器向客户端回写数据</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">4.</span> <span class="nav-text">第三章 综合案例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-文件上传案例"><span class="nav-number">4.1.</span> <span class="nav-text">3.1 文件上传案例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文件上传分析图解"><span class="nav-number">4.1.1.</span> <span class="nav-text">文件上传分析图解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本实现"><span class="nav-number">4.1.1.1.</span> <span class="nav-text">基本实现</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件上传优化分析"><span class="nav-number">4.1.2.</span> <span class="nav-text">文件上传优化分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#优化实现"><span class="nav-number">4.1.2.1.</span> <span class="nav-text">优化实现</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#信息回写分析图解"><span class="nav-number">4.1.3.</span> <span class="nav-text">信息回写分析图解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#回写实现"><span class="nav-number">4.1.3.1.</span> <span class="nav-text">回写实现</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-模拟b-s服务器-扩展知识点"><span class="nav-number">4.2.</span> <span class="nav-text">3.2 模拟B\S服务器(扩展知识点)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#案例分析"><span class="nav-number">4.2.1.</span> <span class="nav-text">案例分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#案例实现"><span class="nav-number">4.2.2.</span> <span class="nav-text">案例实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#访问效果"><span class="nav-number">4.2.3.</span> <span class="nav-text">访问效果</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">【网络编程】</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#主要内容"><span class="nav-number">1.1.</span> <span class="nav-text">主要内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#教学目标"><span class="nav-number">1.2.</span> <span class="nav-text">教学目标</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">第一章 网络编程入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1软件结构"><span class="nav-number">2.1.</span> <span class="nav-text">1.1软件结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-网络通信协议"><span class="nav-number">2.2.</span> <span class="nav-text">1.2 网络通信协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-协议分类"><span class="nav-number">2.3.</span> <span class="nav-text">1.3 协议分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-网络编程三要素"><span class="nav-number">2.4.</span> <span class="nav-text">1.4 网络编程三要素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#协议"><span class="nav-number">2.4.1.</span> <span class="nav-text">协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ip地址"><span class="nav-number">2.4.2.</span> <span class="nav-text">IP地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#端口号"><span class="nav-number">2.4.3.</span> <span class="nav-text">端口号</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">3.</span> <span class="nav-text">第二章 TCP通信程序</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-概述"><span class="nav-number">3.1.</span> <span class="nav-text">2.1 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-socket类"><span class="nav-number">3.2.</span> <span class="nav-text">2.2 Socket类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#构造方法"><span class="nav-number">3.2.1.</span> <span class="nav-text">构造方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#成员方法"><span class="nav-number">3.2.2.</span> <span class="nav-text">成员方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-serversocket类"><span class="nav-number">3.3.</span> <span class="nav-text">2.3 ServerSocket类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#构造方法-v2"><span class="nav-number">3.3.1.</span> <span class="nav-text">构造方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#成员方法-v2"><span class="nav-number">3.3.2.</span> <span class="nav-text">成员方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-简单的tcp网络程序"><span class="nav-number">3.4.</span> <span class="nav-text">2.4 简单的TCP网络程序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#tcp通信分析图解"><span class="nav-number">3.4.1.</span> <span class="nav-text">TCP通信分析图解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#客户端向服务器发送数据"><span class="nav-number">3.4.2.</span> <span class="nav-text">客户端向服务器发送数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器向客户端回写数据"><span class="nav-number">3.4.3.</span> <span class="nav-text">服务器向客户端回写数据</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">4.</span> <span class="nav-text">第三章 综合案例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-文件上传案例"><span class="nav-number">4.1.</span> <span class="nav-text">3.1 文件上传案例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文件上传分析图解"><span class="nav-number">4.1.1.</span> <span class="nav-text">文件上传分析图解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本实现"><span class="nav-number">4.1.1.1.</span> <span class="nav-text">基本实现</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件上传优化分析"><span class="nav-number">4.1.2.</span> <span class="nav-text">文件上传优化分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#优化实现"><span class="nav-number">4.1.2.1.</span> <span class="nav-text">优化实现</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#信息回写分析图解"><span class="nav-number">4.1.3.</span> <span class="nav-text">信息回写分析图解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#回写实现"><span class="nav-number">4.1.3.1.</span> <span class="nav-text">回写实现</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-模拟b-s服务器-扩展知识点"><span class="nav-number">4.2.</span> <span class="nav-text">3.2 模拟B\S服务器(扩展知识点)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#案例分析"><span class="nav-number">4.2.1.</span> <span class="nav-text">案例分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#案例实现"><span class="nav-number">4.2.2.</span> <span class="nav-text">案例实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#访问效果"><span class="nav-number">4.2.3.</span> <span class="nav-text">访问效果</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
