@@ -1069,7 +1069,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1f85f0;
+  background: #4ecf95;
 }
 .links-of-friendly a {
   display: inline-block;
@@ -1087,7 +1087,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3dffff;
+  background: #e2ac96;
 }
 .sidebar-nav {
   margin: 0;
@@ -1960,7 +1960,7 @@ ul li {
 }
 .header-inner {
   margin-bottom: 80px;
-  padding: 40px 0;
+  padding: 21px 0;
 }
 .header-inner:before,
 .header-inner:after {
