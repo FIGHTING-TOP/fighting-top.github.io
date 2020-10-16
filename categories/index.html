@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html class="theme-next use-motion theme-next-mala">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head><meta name="generator" content="Hexo 3.9.0"><link rel="manifest" href="/manifest.json">
   
 
 <meta charset="UTF-8">
@@ -360,5 +360,10 @@
       });
     });
   </script>
-</body>
+<script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js?t=1602819771462')
+    .then(function () {console.log('ServiceWorker Register Successfully.')})
+    .catch(function (e) {console.error(e)});
+}
+</script></body>
 </html>
