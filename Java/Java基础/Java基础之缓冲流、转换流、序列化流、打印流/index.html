@@ -48,14 +48,14 @@
 <meta property="og:site_name" content="Tiger&#39;s blog">
 <meta property="og:description" content="【缓冲流、转换流、序列化流】 主要内容  缓冲流 转换流 序列化流 打印流  教学目标  [ ] 能够使用字节缓冲流读取数据到程序 [ ] 能够使用字节缓冲流写出数据到文件 [ ] 能够明确字符缓冲流的作用和基本用法 [ ] 能够使用缓冲流的特殊功能 [ ] 能够阐述编码表的意义 [ ] 能够使用转换流读取指定编码的文本文件 [ ] 能够使用转换流写入指定编码的文本文件 [ ] 能够说出打印流的特">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://fighting-top.github.io/.io//1_charset.jpg">
-<meta property="og:image" content="https://fighting-top.github.io/.io//2_zhuanhuan.jpg">
-<meta property="og:image" content="https://fighting-top.github.io/.io//3_xuliehua.jpg">
-<meta property="og:updated_time" content="2020-05-08T02:18:15.723Z">
+<meta property="og:image" content="https://fighting-top.github.io/Java/Java基础/Java基础之缓冲流、转换流、序列化流、打印流/1_charset.jpg">
+<meta property="og:image" content="https://fighting-top.github.io/Java/Java基础/Java基础之缓冲流、转换流、序列化流、打印流/2_zhuanhuan.jpg">
+<meta property="og:image" content="https://fighting-top.github.io/Java/Java基础/Java基础之缓冲流、转换流、序列化流、打印流/3_xuliehua.jpg">
+<meta property="og:updated_time" content="2020-10-19T02:20:24.999Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java基础学习之缓冲流、转换流、序列化流">
 <meta name="twitter:description" content="【缓冲流、转换流、序列化流】 主要内容  缓冲流 转换流 序列化流 打印流  教学目标  [ ] 能够使用字节缓冲流读取数据到程序 [ ] 能够使用字节缓冲流写出数据到文件 [ ] 能够明确字符缓冲流的作用和基本用法 [ ] 能够使用缓冲流的特殊功能 [ ] 能够阐述编码表的意义 [ ] 能够使用转换流读取指定编码的文本文件 [ ] 能够使用转换流写入指定编码的文本文件 [ ] 能够说出打印流的特">
-<meta name="twitter:image" content="https://fighting-top.github.io/.io//1_charset.jpg">
+<meta name="twitter:image" content="https://fighting-top.github.io/Java/Java基础/Java基础之缓冲流、转换流、序列化流、打印流/1_charset.jpg">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -339,7 +339,8 @@
 <ul>
 <li><strong>字符集 <code>Charset</code></strong>：也叫编码表。是一个系统支持的所有字符的集合，包括各国家文字、标点符号、图形符号、数字等。</li>
 </ul>
-<p>计算机要准确的存储和识别各种字符集符号，需要进行字符编码，一套字符集必然至少有一套字符编码。常见字符集有ASCII字符集、GBK字符集、Unicode字符集等。<img src="/.io//1_charset.jpg" alt></p>
+<p>计算机要准确的存储和识别各种字符集符号，需要进行字符编码，一套字符集必然至少有一套字符编码。常见字符集有ASCII字符集、GBK字符集、Unicode字符集等。<br>
+<img src="//fighting-top.github.io/Java/Java基础/Java基础之缓冲流、转换流、序列化流、打印流/1_charset.jpg" alt="1_charset"></p>
 <p>可见，当指定了<strong>编码</strong>，它所对应的<strong>字符集</strong>自然就指定了，所以<strong>编码</strong>才是我们最终要关心的。</p>
 <ul>
 <li><strong>ASCII字符集</strong> ：
@@ -404,7 +405,8 @@
 <h3 id="指定编码写出">指定编码写出</h3>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">OutputDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">      	<span class="comment">// 定义文件路径</span></span><br><span class="line">        String FileName = <span class="string">"E:\\out.txt"</span>;</span><br><span class="line">      	<span class="comment">// 创建流对象,默认UTF8编码</span></span><br><span class="line">        OutputStreamWriter osw = <span class="keyword">new</span> OutputStreamWriter(<span class="keyword">new</span> FileOutputStream(FileName));</span><br><span class="line">        <span class="comment">// 写出数据</span></span><br><span class="line">      	osw.write(<span class="string">"你好"</span>); <span class="comment">// 保存为6个字节</span></span><br><span class="line">        osw.close();</span><br><span class="line">      	</span><br><span class="line">		<span class="comment">// 定义文件路径</span></span><br><span class="line">		String FileName2 = <span class="string">"E:\\out2.txt"</span>;</span><br><span class="line">     	<span class="comment">// 创建流对象,指定GBK编码</span></span><br><span class="line">        OutputStreamWriter osw2 = <span class="keyword">new</span> OutputStreamWriter(<span class="keyword">new</span> FileOutputStream(FileName2),<span class="string">"GBK"</span>);</span><br><span class="line">        <span class="comment">// 写出数据</span></span><br><span class="line">      	osw2.write(<span class="string">"你好"</span>);<span class="comment">// 保存为4个字节</span></span><br><span class="line">        osw2.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="转换流理解图解">转换流理解图解</h3>
-<p><strong>转换流是字节与字符间的桥梁！</strong><img src="/.io//2_zhuanhuan.jpg" alt></p>
+<p><strong>转换流是字节与字符间的桥梁！</strong><br>
+<img src="//fighting-top.github.io/Java/Java基础/Java基础之缓冲流、转换流、序列化流、打印流/2_zhuanhuan.jpg" alt="2_zhuanhuan"></p>
 <h2 id="2-5-练习：转换文件编码">2.5 练习：转换文件编码</h2>
 <p>将GBK编码的文本文件，转换为UTF-8编码的文本文件。</p>
 <h3 id="案例分析-v2">案例分析</h3>
@@ -417,7 +419,8 @@
 <h1>第三章 序列化</h1>
 <h2 id="3-1-概述">3.1 概述</h2>
 <p>Java 提供了一种对象<strong>序列化</strong>的机制。用一个字节序列可以表示一个对象，该字节序列包含该<code>对象的数据</code>、<code>对象的类型</code>和<code>对象中存储的属性</code>等信息。字节序列写出到文件之后，相当于文件中<strong>持久保存</strong>了一个对象的信息。</p>
-<p>反之，该字节序列还可以从文件中读取回来，重构对象，对它进行<strong>反序列化</strong>。<code>对象的数据</code>、<code>对象的类型</code>和<code>对象中存储的数据</code>信息，都可以用来在内存中创建对象。看图理解序列化： <img src="/.io//3_xuliehua.jpg" alt></p>
+<p>反之，该字节序列还可以从文件中读取回来，重构对象，对它进行<strong>反序列化</strong>。<code>对象的数据</code>、<code>对象的类型</code>和<code>对象中存储的数据</code>信息，都可以用来在内存中创建对象。看图理解序列化：<br>
+<img src="//fighting-top.github.io/Java/Java基础/Java基础之缓冲流、转换流、序列化流、打印流/3_xuliehua.jpg" alt="3_xuliehua"></p>
 <h2 id="3-2-objectoutputstream类">3.2 ObjectOutputStream类</h2>
 <p><code>java.io.ObjectOutputStream</code> 类，将Java对象的原始数据类型写出到文件,实现对象的持久存储。</p>
 <h3 id="构造方法-v5">构造方法</h3>
@@ -488,8 +491,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PrintStream ps = <span class="keyword">new</span> PrintStream(<span class="string">"ps.txt"</span>)；</span><br></pre></td></tr></table></figure>
 <h3 id="改变打印流向">改变打印流向</h3>
 <p><code>System.out</code>就是<code>PrintStream</code>类型的，只不过它的流向是系统规定的，打印在控制台上。不过，既然是流对象，我们就可以玩一个&quot;小把戏&quot;，改变它的流向。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrintDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">		<span class="comment">// 调用系统的打印流,控制台直接输出97</span></span><br><span class="line">        System.out.println(<span class="number">97</span>);</span><br><span class="line">      </span><br><span class="line">		<span class="comment">// 创建打印流,指定文件的名称</span></span><br><span class="line">        PrintStream ps = <span class="keyword">new</span> PrintStream(<span class="string">"ps.txt"</span>);</span><br><span class="line">      	</span><br><span class="line">      	<span class="comment">// 设置系统的打印流流向,输出到ps.txt</span></span><br><span class="line">        System.setOut(ps);</span><br><span class="line">      	<span class="comment">// 调用系统的打印流,ps.txt中输出97</span></span><br><span class="line">        System.out.println(<span class="number">97</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</span>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrintDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">		<span class="comment">// 调用系统的打印流,控制台直接输出97</span></span><br><span class="line">        System.out.println(<span class="number">97</span>);</span><br><span class="line">      </span><br><span class="line">		<span class="comment">// 创建打印流,指定文件的名称</span></span><br><span class="line">        PrintStream ps = <span class="keyword">new</span> PrintStream(<span class="string">"ps.txt"</span>);</span><br><span class="line">      	</span><br><span class="line">      	<span class="comment">// 设置系统的打印流流向,输出到ps.txt</span></span><br><span class="line">        System.setOut(ps);</span><br><span class="line">      	<span class="comment">// 调用系统的打印流,ps.txt中输出97</span></span><br><span class="line">        System.out.println(<span class="number">97</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></span>
       
     </div>
 
@@ -508,13 +510,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/Java/Java基础/网络编程/Java基础之网络编程/" rel="prev">Java基础学习之网络编程</a>
+              <a href="/Java/Java基础/Java基础之字节流、字符流/" rel="prev">Java基础学习之字节流、字符流</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Hexo/性化定制hexo的next主题/" rel="next">个性化定制hexo的next主题</a>
+              <a href="/Java/Java基础/网络编程/Java基础之网络编程/" rel="next">Java基础学习之网络编程</a>
             
           </div>
         </div>
@@ -884,7 +886,7 @@
     });
   </script>
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1602819771462')
+  navigator.serviceWorker.register('/sw.js?t=1603075890039')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
