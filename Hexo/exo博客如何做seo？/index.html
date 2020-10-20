@@ -47,21 +47,21 @@
 <meta name="keywords" content="blog,seo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo博客如何做seo？">
-<meta property="og:url" content="https://fighting-top.github.io/Hexo/exo博客如何做seo？/index.html">
+<meta property="og:url" content="https://blog.fightingtop.cn/Hexo/exo博客如何做seo？/index.html">
 <meta property="og:site_name" content="明伟的博客">
 <meta property="og:description" content="本文主要介绍Hexo博客分别在Google和百度的seo优化方法。 添加sitemap 安装插件 需要安装两个插件来生成 sitemap 文件，前一个是传统的 sitemap，后一个是百度的 sitemap。 npm install hexo-generator-sitemap --save npm install hexo-generator-baidu-sitemap --save  修改站点">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://fighting-top.github.io/Hexo/exo博客如何做seo？/seo1.png">
-<meta property="og:image" content="https://fighting-top.github.io/Hexo/exo博客如何做seo？/seo2.png">
-<meta property="og:image" content="https://fighting-top.github.io/Hexo/exo博客如何做seo？/seo3.png">
-<meta property="og:image" content="https://fighting-top.github.io/Hexo/exo博客如何做seo？/seo4.png">
+<meta property="og:image" content="https://blog.fightingtop.cn/Hexo/exo博客如何做seo？/seo1.png">
+<meta property="og:image" content="https://blog.fightingtop.cn/Hexo/exo博客如何做seo？/seo2.png">
+<meta property="og:image" content="https://blog.fightingtop.cn/Hexo/exo博客如何做seo？/seo3.png">
+<meta property="og:image" content="https://blog.fightingtop.cn/Hexo/exo博客如何做seo？/seo4.png">
 <meta property="og:image" content="https://blog-1254259578.cos.ap-shanghai.myqcloud.com/picgo/1514959994886.jpg">
 <meta property="og:image" content="https://blog-1254259578.cos.ap-shanghai.myqcloud.com/picgo/1514960357987.jpg">
 <meta property="og:updated_time" content="2020-10-20T07:19:35.705Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo博客如何做seo？">
 <meta name="twitter:description" content="本文主要介绍Hexo博客分别在Google和百度的seo优化方法。 添加sitemap 安装插件 需要安装两个插件来生成 sitemap 文件，前一个是传统的 sitemap，后一个是百度的 sitemap。 npm install hexo-generator-sitemap --save npm install hexo-generator-baidu-sitemap --save  修改站点">
-<meta name="twitter:image" content="https://fighting-top.github.io/Hexo/exo博客如何做seo？/seo1.png">
+<meta name="twitter:image" content="https://blog.fightingtop.cn/Hexo/exo博客如何做seo？/seo1.png">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -254,7 +254,7 @@ baidusitemap:
 url: https://blog.fightingtop.cn
 </code></pre>
 <p>安装完成后执行<code>hexo g</code>即会在站点<code>public</code>目录下生成<code>sitemap.xml</code>和<code>baidusitemap.xml</code>。</p>
-<p><img src="//fighting-top.github.io/Hexo/exo博客如何做seo？/seo1.png" alt="sitemap">]</p>
+<p><img src="//blog.fightingtop.cn/Hexo/exo博客如何做seo？/seo1.png" alt="sitemap">]</p>
 <h1>添加爬虫协议</h1>
 <p>在站点<code>source</code>文件夹下新建<code>robots.txt</code>文件，文件内容如下：</p>
 <pre><code>User-agent: *
@@ -277,10 +277,10 @@ Sitemap:https://blog.fightingtop.cn/baidusitemap.xml
 <p>需要将<code>https://blog.fightingtop.cn</code>改成自己的域名。</p>
 <h1>提交资源到 Google</h1>
 <p>打开<a href="https://www.google.com/webmasters/" target="_blank" rel="noopener">Google Search Console</a>，填写博客地址。</p>
-<p><img src="//fighting-top.github.io/Hexo/exo博客如何做seo？/seo2.png" alt="提交Google"></p>
+<p><img src="//blog.fightingtop.cn/Hexo/exo博客如何做seo？/seo2.png" alt="提交Google"></p>
 <h2 id="站点验证">站点验证</h2>
 <p><code>Google</code>给出的推荐方法是上传<code>HTML</code>文件，但是不知道为什么一直验证失败，所以我选择了备用方法中的<code>HTML 标记</code>，<br>
-<img src="//fighting-top.github.io/Hexo/exo博客如何做seo？/seo3.png" alt="验证"></p>
+<img src="//blog.fightingtop.cn/Hexo/exo博客如何做seo？/seo3.png" alt="验证"></p>
 <p>将给出的元标记复制到<code>\themes\hexo-theme-next\layout\_partials\head.swig</code>文件中。添加后运行<code>hexo d -g</code>将改动提交。稍后就可以验证成功了。</p>
 <p><code>your-hexo-site\themes\hexo-theme-next\layout\_partials\head.swig</code></p>
 <pre><code>&lt;metacharset=&quot;UTF-8&quot;/&gt;
@@ -303,7 +303,7 @@ Sitemap:https://blog.fightingtop.cn/baidusitemap.xml
 </code></pre>
 <h2 id="添加站点地图">添加站点地图</h2>
 <p>点击右上角添加/测试站点地图输入 sitemap.xml 进行测试，测试无误后再提交文件。</p>
-<p><img src="//fighting-top.github.io/Hexo/exo博客如何做seo？/seo4.png" alt="提交站点地图"></p>
+<p><img src="//blog.fightingtop.cn/Hexo/exo博客如何做seo？/seo4.png" alt="提交站点地图"></p>
 <h1>Baidu主动提交链接方法</h1>
 <p>该方法可直接推送.github.io结尾的网页的链接给百度而避免百度无法爬取github中链接的问题。</p>
 <p>该方法需要安装hexo插件，参考官方说明<a href="http://hui-wang.info/2016/10/23/Hexo%E6%8F%92%E4%BB%B6%E4%B9%8B%E7%99%BE%E5%BA%A6%E4%B8%BB%E5%8A%A8%E6%8F%90%E4%BA%A4%E9%93%BE%E6%8E%A5/" target="_blank" rel="noopener">Hexo插件之百度自动提交链接</a>。</p>
@@ -789,7 +789,7 @@ permalink: :title.html
     });
   </script>
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1603179174790')
+  navigator.serviceWorker.register('/sw.js?t=1603182149449')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }

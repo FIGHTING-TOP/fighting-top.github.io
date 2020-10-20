@@ -47,17 +47,17 @@
 <meta name="keywords" content="Java,Java基础">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java基础学习之字节流、字符流">
-<meta property="og:url" content="https://fighting-top.github.io/Java/Java基础/Java基础之字节流、字符流/index.html">
+<meta property="og:url" content="https://blog.fightingtop.cn/Java/Java基础/Java基础之字节流、字符流/index.html">
 <meta property="og:site_name" content="明伟的博客">
 <meta property="og:description" content="【字节流、字符流】 主要内容  IO流 字节流 字符流 异常处理 Properties  教学目标  [ ] 能够说出IO流的分类和功能 [ ] 能够使用字节输出流写出数据到文件 [ ] 能够使用字节输入流读取数据到程序 [ ] 能够理解读取数据read(byte[])方法的原理 [ ] 能够使用字节流完成文件的复制 [ ] 能够使用FileWirter写数据到文件 [ ] 能够说出FileWri">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java基础/Java基础之字节流、字符流/1_io.jpg">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java基础/Java基础之字节流、字符流/2_copy.jpg">
+<meta property="og:image" content="https://blog.fightingtop.cn/Java/Java基础/Java基础之字节流、字符流/1_io.jpg">
+<meta property="og:image" content="https://blog.fightingtop.cn/Java/Java基础/Java基础之字节流、字符流/2_copy.jpg">
 <meta property="og:updated_time" content="2020-10-19T02:15:57.480Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java基础学习之字节流、字符流">
 <meta name="twitter:description" content="【字节流、字符流】 主要内容  IO流 字节流 字符流 异常处理 Properties  教学目标  [ ] 能够说出IO流的分类和功能 [ ] 能够使用字节输出流写出数据到文件 [ ] 能够使用字节输入流读取数据到程序 [ ] 能够理解读取数据read(byte[])方法的原理 [ ] 能够使用字节流完成文件的复制 [ ] 能够使用FileWirter写数据到文件 [ ] 能够说出FileWri">
-<meta name="twitter:image" content="https://fighting-top.github.io/Java/Java基础/Java基础之字节流、字符流/1_io.jpg">
+<meta name="twitter:image" content="https://blog.fightingtop.cn/Java/Java基础/Java基础之字节流、字符流/1_io.jpg">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -286,7 +286,7 @@
 <li><strong>字符流</strong> ：以字符为单位，读写数据的流。</li>
 </ul>
 <h2 id="1-3-io的流向说明图解">1.3 IO的流向说明图解</h2>
-<p><img src="//fighting-top.github.io/Java/Java基础/Java基础之字节流、字符流/1_io.jpg" alt="1_io"></p>
+<p><img src="//blog.fightingtop.cn/Java/Java基础/Java基础之字节流、字符流/1_io.jpg" alt="1_io"></p>
 <h2 id="1-4-顶级父类们">1.4 顶级父类们</h2>
 <table>
 <thead>
@@ -436,7 +436,7 @@
 </blockquote>
 <h2 id="2-6-字节流练习：图片复制">2.6 字节流练习：图片复制</h2>
 <h3 id="复制原理图解">复制原理图解</h3>
-<p><img src="//fighting-top.github.io/Java/Java基础/Java基础之字节流、字符流/2_copy.jpg" alt="2_copy"></p>
+<p><img src="//blog.fightingtop.cn/Java/Java基础/Java基础之字节流、字符流/2_copy.jpg" alt="2_copy"></p>
 <h3 id="案例实现">案例实现</h3>
 <p>复制图片文件，代码使用演示：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Copy</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        <span class="comment">// 1.创建流对象</span></span><br><span class="line">        <span class="comment">// 1.1 指定数据源</span></span><br><span class="line">        FileInputStream fis = <span class="keyword">new</span> FileInputStream(<span class="string">"D:\\test.jpg"</span>);</span><br><span class="line">        <span class="comment">// 1.2 指定目的地</span></span><br><span class="line">        FileOutputStream fos = <span class="keyword">new</span> FileOutputStream(<span class="string">"test_copy.jpg"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 2.读写数据</span></span><br><span class="line">        <span class="comment">// 2.1 定义数组</span></span><br><span class="line">        <span class="keyword">byte</span>[] b = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>];</span><br><span class="line">        <span class="comment">// 2.2 定义长度</span></span><br><span class="line">        <span class="keyword">int</span> len;</span><br><span class="line">        <span class="comment">// 2.3 循环读取</span></span><br><span class="line">        <span class="keyword">while</span> ((len = fis.read(b))!=-<span class="number">1</span>) &#123;</span><br><span class="line">            <span class="comment">// 2.4 写出数据</span></span><br><span class="line">            fos.write(b, <span class="number">0</span> , len);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 3.关闭资源</span></span><br><span class="line">        fos.close();</span><br><span class="line">        fis.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -991,7 +991,7 @@
     });
   </script>
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1603179174790')
+  navigator.serviceWorker.register('/sw.js?t=1603182149449')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }

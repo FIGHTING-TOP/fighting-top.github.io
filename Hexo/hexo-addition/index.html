@@ -47,7 +47,7 @@
 <meta name="keywords" content="blog,Hexo,PWA,AMP,HTTPS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo博客搭建">
-<meta property="og:url" content="https://fighting-top.github.io/Hexo/hexo-addition/index.html">
+<meta property="og:url" content="https://blog.fightingtop.cn/Hexo/hexo-addition/index.html">
 <meta property="og:site_name" content="明伟的博客">
 <meta property="og:description" content="HTTPS &amp;amp; HTTP/2 现在是 2019 年了，网站不是 HTTPS 和 HTTP/2 的感觉脱离时代了。HTTPS 已经不是因为安全方面的问题来考虑的了，而是后面所讲到的 PWA 里面很多最新的 HTML5 API 都是要求在 HTTPS 环境下才能正常工作的，所以要想让我们的博客更加的完美，必须要提供 HTTPS 环境。 可是，我并没有主机啊，没有服务器，怎么配证书？有主机的土豪">
 <meta property="og:locale" content="zh-CN">
@@ -262,7 +262,7 @@
 <p>不同的主题需要修改的文件不同，next 主题需要修改 <code>/themes/next/layout/_partials/head/custom-head.swig</code> 文件，简单加入以下内容即可:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if is_post() &amp;&amp; config.generator_amp %&#125;</span><br><span class="line">  &lt;link rel=&quot;amphtml&quot; href=&quot;./amp/index.html&quot;&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line">如果 Next 主题的版本比较老，找不到 /themes/next/layout/_partials/head/custom-head.swig 文件，就修改 /themes/next/layout/_partials/head/head.swig 文件，也是简单的把上面的代码加入到文件末尾即可。</span><br></pre></td></tr></table></figure>
 <h1><a href="#SEO"></a>hexo SEO</h1>
-<p>这个功能我单独总结了一一篇文章 <a href="https://blog.fightingtop.cn/Hexo/exo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E5%81%9Aseo%EF%BC%9F/" target="_blank" rel="noopener">hexo博客如何做seo？</a></p>
+<p>这个功能我单独总结了一一篇文章 <a href="https://blog.fightingtop.cn/Hexo/exo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E5%81%9Aseo%EF%BC%9F/">hexo博客如何做seo？</a></p>
 <h1><a href="#pwa"></a>添加 PWA 特性</h1>
 <p>什么是PWA？PWA 是一种渐进式的 Web App, 我们的博客其实就是一个 Web App, 渐进式的，就是慢慢来，一步一步的用一些 HTML5 的最新 API 的实现将我们的站点的用户体验做到极致。具体有关PWA可以看下<a href="https://lavas-project.github.io/pwa-book/" target="_blank" rel="noopener">《PWA 应用实战》</a>或者<a href="https://developers.google.cn/web/fundamentals/codelabs/your-first-pwapp/" target="_blank" rel="noopener">点击这里</a></p>
 <h2 id="为什么要-pwa"><a href="#pwa-1"></a>为什么要 PWA</h2>
@@ -702,7 +702,7 @@
     });
   </script>
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1603179174790')
+  navigator.serviceWorker.register('/sw.js?t=1603182149449')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
