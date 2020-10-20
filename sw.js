@@ -30,9 +30,9 @@ var precacheUrls = [];
 
   precacheUrls.push('/Java/Java基础/Java基础之File类、递归/');
 
-  precacheUrls.push('/Java/Java基础/Java基础之字节流、字符流/');
-
   precacheUrls.push('/Java/Java基础/Java基础之缓冲流、转换流、序列化流、打印流/');
+
+  precacheUrls.push('/Java/Java基础/Java基础之字节流、字符流/');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":5};
