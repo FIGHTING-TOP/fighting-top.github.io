@@ -13,6 +13,7 @@
 <meta http-equiv="Cache-Control" content="no-siteapp">
 
 <meta name="google-site-verification" content="IHpP6Vbqkv1A32OfiNsqkmZTxnvZLeaFcnxLWljvnbc">
+<meta name="baidu-site-verification" content="code-c4L6zwY2aN">
 
 
 
@@ -33,7 +34,7 @@
 
 
 
-  <meta name="keywords" content="Java,Java基础,">
+  <meta name="keywords" content="Java,">
 
 
 
@@ -43,19 +44,19 @@
 
 
 <meta name="description" content="【File类、递归】 主要内容  File类 递归  教学目标  [ ] 能够说出File对象的创建方式 [ ] 能够说出File类获取名称的方法名称 [ ] 能够说出File类获取绝对路径的方法名称 [ ] 能够说出File类获取文件大小的方法名称 [ ] 能够说出File类判断是否是文件的方法名称 [ ] 能够说出File类判断是否是文件夹的方法名称 [ ] 能够辨别相对路径和绝对路径 [ ]">
-<meta name="keywords" content="Java,Java基础">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java基础学习之File类、递归">
-<meta property="og:url" content="https://fighting-top.github.io/Java/Java基础/Java基础之File类、递归/index.html">
-<meta property="og:site_name" content="Tiger&#39;s blog">
+<meta property="og:url" content="https://fighting-top.github.io/Java/Java基础之File类、递归/index.html">
+<meta property="og:site_name" content="明伟的博客">
 <meta property="og:description" content="【File类、递归】 主要内容  File类 递归  教学目标  [ ] 能够说出File对象的创建方式 [ ] 能够说出File类获取名称的方法名称 [ ] 能够说出File类获取绝对路径的方法名称 [ ] 能够说出File类获取文件大小的方法名称 [ ] 能够说出File类判断是否是文件的方法名称 [ ] 能够说出File类判断是否是文件夹的方法名称 [ ] 能够辨别相对路径和绝对路径 [ ]">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://fighting-top.github.io/Java/Java基础/Java基础之File类、递归/day08_01_%E9%80%92%E5%BD%92%E7%B4%AF%E5%92%8C.jpg">
-<meta property="og:updated_time" content="2020-10-19T02:21:06.360Z">
+<meta property="og:image" content="https://fighting-top.github.io/Java/Java基础之File类、递归/day08_01_%E9%80%92%E5%BD%92%E7%B4%AF%E5%92%8C.jpg">
+<meta property="og:updated_time" content="2020-10-20T06:44:08.114Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java基础学习之File类、递归">
 <meta name="twitter:description" content="【File类、递归】 主要内容  File类 递归  教学目标  [ ] 能够说出File对象的创建方式 [ ] 能够说出File类获取名称的方法名称 [ ] 能够说出File类获取绝对路径的方法名称 [ ] 能够说出File类获取文件大小的方法名称 [ ] 能够说出File类判断是否是文件的方法名称 [ ] 能够说出File类判断是否是文件夹的方法名称 [ ] 能够辨别相对路径和绝对路径 [ ]">
-<meta name="twitter:image" content="https://fighting-top.github.io/Java/Java基础/Java基础之File类、递归/day08_01_%E9%80%92%E5%BD%92%E7%B4%AF%E5%92%8C.jpg">
+<meta name="twitter:image" content="https://fighting-top.github.io/Java/Java基础之File类、递归/day08_01_%E9%80%92%E5%BD%92%E7%B4%AF%E5%92%8C.jpg">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -65,7 +66,7 @@
   };
 </script>
 
-  <title> Java基础学习之File类、递归 | Tiger's blog </title>
+  <title> Java基础学习之File类、递归 | 明伟的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -209,18 +210,6 @@
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                 <a href="/categories/Java/" itemprop="url" rel="index">
                   <span itemprop="name">Java</span>
-                </a>
-              </span>
-
-              
-              
-                ， 
-              
-
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/Java/Java基础/" itemprop="url" rel="index">
-                  <span itemprop="name">Java基础</span>
                 </a>
               </span>
 
@@ -372,7 +361,7 @@
 <p><strong>实现代码</strong>：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DiGuiDemo</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">//计算1~num的和，使用递归完成</span></span><br><span class="line">		<span class="keyword">int</span> num = <span class="number">5</span>;</span><br><span class="line">      	<span class="comment">// 调用求和的方法</span></span><br><span class="line">		<span class="keyword">int</span> sum = getSum(num);</span><br><span class="line">      	<span class="comment">// 输出结果</span></span><br><span class="line">		System.out.println(sum);</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">  	<span class="comment">/*</span></span><br><span class="line"><span class="comment">  	  通过递归算法实现.</span></span><br><span class="line"><span class="comment">  	  参数列表:int </span></span><br><span class="line"><span class="comment">  	  返回值类型: int </span></span><br><span class="line"><span class="comment">  	*/</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getSum</span><span class="params">(<span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">      	<span class="comment">/* </span></span><br><span class="line"><span class="comment">      	   num为1时,方法返回1,</span></span><br><span class="line"><span class="comment">      	   相当于是方法的出口,num总有是1的情况</span></span><br><span class="line"><span class="comment">      	*/</span></span><br><span class="line">		<span class="keyword">if</span>(num == <span class="number">1</span>)&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">      	<span class="comment">/*</span></span><br><span class="line"><span class="comment">          num不为1时,方法返回 num +(num-1)的累和</span></span><br><span class="line"><span class="comment">          递归调用getSum方法</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">		<span class="keyword">return</span> num + getSum(num-<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="代码执行图解">代码执行图解</h3>
-<p><img src="//fighting-top.github.io/Java/Java基础/Java基础之File类、递归/day08_01_%E9%80%92%E5%BD%92%E7%B4%AF%E5%92%8C.jpg" alt="day08_01_递归累和"></p>
+<p><img src="//fighting-top.github.io/Java/Java基础之File类、递归/day08_01_%E9%80%92%E5%BD%92%E7%B4%AF%E5%92%8C.jpg" alt="day08_01_递归累和"></p>
 <blockquote>
 <p>小贴士：递归一定要有条件限定，保证递归能够停止下来，次数不要太多，否则会发生栈内存溢出。</p>
 </blockquote>
@@ -429,8 +418,6 @@
         <div class="post-tags">
           
             <a href="/tags/Java/" rel="tag">#Java</a>
-          
-            <a href="/tags/Java基础/" rel="tag">#Java基础</a>
           
         </div>
       
@@ -502,28 +489,28 @@
 
       <section class="site-overview">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/img/avatar.jpg" alt="WangMingwei" itemprop="image">
-          <p class="site-author-name" itemprop="name">WangMingwei</p>
+          <img class="site-author-image" src="/img/avatar.jpg" alt="明伟" itemprop="image">
+          <p class="site-author-name" itemprop="name">明伟</p>
         </div>
         <p class="site-description motion-element" itemprop="description">大音希声，大象无形</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -587,7 +574,7 @@
   <span class="with-love">
     <i class="icon-next-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">WangMingwei
+  <span class="author" itemprop="copyrightHolder">明伟
   </span>
 </div>
 
@@ -815,7 +802,7 @@
     });
   </script>
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1603160001210')
+  navigator.serviceWorker.register('/sw.js?t=1603179174790')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }

@@ -13,6 +13,7 @@
 <meta http-equiv="Cache-Control" content="no-siteapp">
 
 <meta name="google-site-verification" content="IHpP6Vbqkv1A32OfiNsqkmZTxnvZLeaFcnxLWljvnbc">
+<meta name="baidu-site-verification" content="code-c4L6zwY2aN">
 
 
 
@@ -33,7 +34,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,blog,PWA,AMP,HTTPS,">
+  <meta name="keywords" content="blog,Hexo,PWA,AMP,HTTPS,">
 
 
 
@@ -43,16 +44,16 @@
 
 
 <meta name="description" content="HTTPS &amp;amp; HTTP/2 现在是 2019 年了，网站不是 HTTPS 和 HTTP/2 的感觉脱离时代了。HTTPS 已经不是因为安全方面的问题来考虑的了，而是后面所讲到的 PWA 里面很多最新的 HTML5 API 都是要求在 HTTPS 环境下才能正常工作的，所以要想让我们的博客更加的完美，必须要提供 HTTPS 环境。 可是，我并没有主机啊，没有服务器，怎么配证书？有主机的土豪">
-<meta name="keywords" content="Hexo,blog,PWA,AMP,HTTPS">
+<meta name="keywords" content="blog,Hexo,PWA,AMP,HTTPS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo博客发布">
+<meta property="og:title" content="hexo博客搭建">
 <meta property="og:url" content="https://fighting-top.github.io/Hexo/hexo-addition/index.html">
-<meta property="og:site_name" content="Tiger&#39;s blog">
+<meta property="og:site_name" content="明伟的博客">
 <meta property="og:description" content="HTTPS &amp;amp; HTTP/2 现在是 2019 年了，网站不是 HTTPS 和 HTTP/2 的感觉脱离时代了。HTTPS 已经不是因为安全方面的问题来考虑的了，而是后面所讲到的 PWA 里面很多最新的 HTML5 API 都是要求在 HTTPS 环境下才能正常工作的，所以要想让我们的博客更加的完美，必须要提供 HTTPS 环境。 可是，我并没有主机啊，没有服务器，怎么配证书？有主机的土豪">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-10-16T03:41:09.410Z">
+<meta property="og:updated_time" content="2020-10-20T06:38:21.490Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo博客发布">
+<meta name="twitter:title" content="hexo博客搭建">
 <meta name="twitter:description" content="HTTPS &amp;amp; HTTP/2 现在是 2019 年了，网站不是 HTTPS 和 HTTP/2 的感觉脱离时代了。HTTPS 已经不是因为安全方面的问题来考虑的了，而是后面所讲到的 PWA 里面很多最新的 HTML5 API 都是要求在 HTTPS 环境下才能正常工作的，所以要想让我们的博客更加的完美，必须要提供 HTTPS 环境。 可是，我并没有主机啊，没有服务器，怎么配证书？有主机的土豪">
 
 
@@ -63,7 +64,7 @@
   };
 </script>
 
-  <title> hexo博客发布 | Tiger's blog </title>
+  <title> hexo博客搭建 | 明伟的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -186,7 +187,7 @@
           
           
             
-              hexo博客发布
+              hexo博客搭建
             
           
         </h1>
@@ -247,20 +248,21 @@
 <p>cloudflare 的配置有很多，可以在后台进行配置，SSL 需要选择 <code>FULL</code>, 并且设置 <code>HTTP REWRITE</code> 让站点能自动从 HTTP 重定向到 HTTPS。还有很多有用的配置，大家可以自己把玩。</p>
 </blockquote>
 <h1><a href="#amp"></a>构建 AMP</h1>
-<p><a href="https://www.ampproject.org/zh_cn/learn/overview/" target="_blank" rel="noopener">AMP</a> 是 Google 推出的一种网页加速的标准，通过这种标准，可以使你的站点在 Google 搜索结果页（这里是一个忧伤的故事，但是这并不影响我们折腾博客的激情）之后的跳转变得速度超快，具体可以详情见 AMP 的官网，Google 还会对 AMP 的站点有一定的调权，也就是说，如果你的博客提供了 AMP 的页面，将会被 Google 更容易抓取和优先展现，并且能够在 Google 的搜索结果页秒开。</p>
-<p>并且由于 AMP 页面的无 block 的处理，让用户在单独访问你的 AMP 页面的时候也有秒开的体验。还是很懵逼？什么是 AMP？其实就是一个 HTML 页面，知识遵守 AMP 规范的页面，就想你现在在看的这篇博文，就有 <a href="./amp">AMP 版本</a>。</p>
-<p>那么如何让我们的博客能支持 AMP 呢？Hexo 社区有一个叫做 <code>hexo-generator-amp</code> 的插件可以干这个事情。</p>
+<p><a href="https://github.com/ampproject" target="_blank" rel="noopener">AMP</a> 全称为: Accelerated Mobile Pages，其目标是通过加速移动网络的网页加载从而提升体验， Google 推出的一种网页加速的标准，通过这种标准，够在是你的网站在 Google 的搜索结果页秒开。</p>
+<p>那么如何让我们的博客能支持 AMP 呢？在 Hexo 中，已经有现成的插件(plugin)可以帮助我们完成这项工作，这个插件就是: hexo-generator-amp。</p>
 <h2 id="引入-hexo-generator-amp-插件"><a href="#hexo-generator-amp"></a>引入 hexo-generator-amp 插件</h2>
-<p>可以使用 Hexo 的 <code>hexo-generator-amp</code> 插件来帮助我们构建出 AMP 的页面</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\# 在 hexo 博客项目的根目录执行下面的命令  </span><br><span class="line">npm install --save hexo-generator-amp</span><br></pre></td></tr></table></figure>
+<p>进入你的 Hexo 项目目录，执行:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-generator-amp</span><br></pre></td></tr></table></figure>
 <p>此时，博客已经具备生成 AMP 页面的基础了，由于 AMP 是一套独立的页面，<code>hexo-generator-amp</code> 插件只会对文章页面生成 AMP 页面，要想验证，只需要在原本文章的 URL 的基础上在后面加上 <code>/amp</code> 即可。</p>
 <h2 id="配置-config-yml"><a href="#_configyml-1"></a>配置 _config.yml</h2>
 <p><code>hexo-generator-amp</code> 插件是需要从 <code>_config.yml</code> 中读取配置才行，配置如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">\# amp config  </span><br><span class="line">generator_amp:  </span><br><span class="line"> templateDir:  amp-template  </span><br><span class="line"> assetDistDir: amp-dist  </span><br><span class="line"> logo:  </span><br><span class="line"> path: sample/sample-logo.png  </span><br><span class="line"> width: 600  </span><br><span class="line"> height: 60  </span><br><span class="line"> substituteTitleImage:   </span><br><span class="line"> path: sample/sample-substituteTitleImage.png  </span><br><span class="line"> width: 1024  </span><br><span class="line"> height: 800  </span><br><span class="line"> warningLog: false   \# To display warning, please set true.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">\# amp config  </span><br><span class="line">generator_amp:  </span><br><span class="line"> templateDir:  amp-template</span><br><span class="line"> assetDistDir: amp-dist  </span><br><span class="line"> logo:  </span><br><span class="line"> path: sample/sample-logo.png  </span><br><span class="line"> width: 600  </span><br><span class="line"> height: 60  </span><br><span class="line"> substituteTitleImage:   </span><br><span class="line"> path: sample/sample-substituteTitleImage.png  </span><br><span class="line"> width: 1024  </span><br><span class="line"> height: 800  </span><br><span class="line"> warningLog: false   \# To display warning, please set true.</span><br></pre></td></tr></table></figure>
 <p>其中，amp-template 是指明渲染 AMP 页面时候所使用的渲染模版，这种配置表明 AMP 是有一套自己的 theme, 如果想改变默认的 AMP 主题或者其他配置，可以对 amp-template 里面的内容进行二次开发。</p>
-<h2 id="将-amp-页面提交-google-收录"><a href="#amp-google"></a>将 AMP 页面提交 Google 收录</h2>
-<p>目前 AMP 只能被 Google 搜索引擎所解析执行，所以在我们每写完一篇博客的时候，可以将生成的 AMP URL 提交给 Google 收录（虽然这是一个忧伤的故事，但是能被外国友人轻快速搜索到并且阅读体验好，也是蛮不错的一个自我安慰）。</p>
-<p>颇为无奈的抛出一个你可能需要梯子才能够得着的 <a href="https://www.google.com/webmasters/tools/submit-url?hl=zh-CN&amp;pli=1" target="_blank" rel="noopener">Google 的收录入口</a> 。</p>
+<h2 id="修改主题模板文件"><a href="#amp-template"></a>修改主题模板文件</h2>
+<p>不同的主题需要修改的文件不同，next 主题需要修改 <code>/themes/next/layout/_partials/head/custom-head.swig</code> 文件，简单加入以下内容即可:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if is_post() &amp;&amp; config.generator_amp %&#125;</span><br><span class="line">  &lt;link rel=&quot;amphtml&quot; href=&quot;./amp/index.html&quot;&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line">如果 Next 主题的版本比较老，找不到 /themes/next/layout/_partials/head/custom-head.swig 文件，就修改 /themes/next/layout/_partials/head/head.swig 文件，也是简单的把上面的代码加入到文件末尾即可。</span><br></pre></td></tr></table></figure>
+<h1><a href="#SEO"></a>hexo SEO</h1>
+<p>这个功能我单独总结了一一篇文章 <a href="https://blog.fightingtop.cn/Hexo/exo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E5%81%9Aseo%EF%BC%9F/" target="_blank" rel="noopener">hexo博客如何做seo？</a></p>
 <h1><a href="#pwa"></a>添加 PWA 特性</h1>
 <p>什么是PWA？PWA 是一种渐进式的 Web App, 我们的博客其实就是一个 Web App, 渐进式的，就是慢慢来，一步一步的用一些 HTML5 的最新 API 的实现将我们的站点的用户体验做到极致。具体有关PWA可以看下<a href="https://lavas-project.github.io/pwa-book/" target="_blank" rel="noopener">《PWA 应用实战》</a>或者<a href="https://developers.google.cn/web/fundamentals/codelabs/your-first-pwapp/" target="_blank" rel="noopener">点击这里</a></p>
 <h2 id="为什么要-pwa"><a href="#pwa-1"></a>为什么要 PWA</h2>
@@ -309,9 +311,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag">#Hexo</a>
-          
             <a href="/tags/blog/" rel="tag">#blog</a>
+          
+            <a href="/tags/Hexo/" rel="tag">#Hexo</a>
           
             <a href="/tags/PWA/" rel="tag">#PWA</a>
           
@@ -387,28 +389,28 @@
 
       <section class="site-overview">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/img/avatar.jpg" alt="WangMingwei" itemprop="image">
-          <p class="site-author-name" itemprop="name">WangMingwei</p>
+          <img class="site-author-image" src="/img/avatar.jpg" alt="明伟" itemprop="image">
+          <p class="site-author-name" itemprop="name">明伟</p>
         </div>
         <p class="site-description motion-element" itemprop="description">大音希声，大象无形</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -450,7 +452,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">HTTPS &amp; HTTP/2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">构建 AMP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#引入-hexo-generator-amp-插件"><span class="nav-number">2.1.</span> <span class="nav-text">引入 hexo-generator-amp 插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-config-yml"><span class="nav-number">2.2.</span> <span class="nav-text">配置 _config.yml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将-amp-页面提交-google-收录"><span class="nav-number">2.3.</span> <span class="nav-text">将 AMP 页面提交 Google 收录</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">3.</span> <span class="nav-text">添加 PWA 特性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要-pwa"><span class="nav-number">3.1.</span> <span class="nav-text">为什么要 PWA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎么为博客加-pwa-特性"><span class="nav-number">3.2.</span> <span class="nav-text">怎么为博客加 PWA 特性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#manifest-json"><span class="nav-number">3.2.1.</span> <span class="nav-text">manifest.json</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#想-ios-safari-也能体验更好的添加到桌面"><span class="nav-number">3.2.1.1.</span> <span class="nav-text">想 iOS Safari 也能体验更好的添加到桌面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#service-worker"><span class="nav-number">3.2.1.2.</span> <span class="nav-text">Service Worker</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-pwa"><span class="nav-number">3.2.1.3.</span> <span class="nav-text">hexo-pwa</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">HTTPS &amp; HTTP/2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">构建 AMP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#引入-hexo-generator-amp-插件"><span class="nav-number">2.1.</span> <span class="nav-text">引入 hexo-generator-amp 插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-config-yml"><span class="nav-number">2.2.</span> <span class="nav-text">配置 _config.yml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改主题模板文件"><span class="nav-number">2.3.</span> <span class="nav-text">修改主题模板文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">3.</span> <span class="nav-text">hexo SEO</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">4.</span> <span class="nav-text">添加 PWA 特性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要-pwa"><span class="nav-number">4.1.</span> <span class="nav-text">为什么要 PWA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎么为博客加-pwa-特性"><span class="nav-number">4.2.</span> <span class="nav-text">怎么为博客加 PWA 特性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#manifest-json"><span class="nav-number">4.2.1.</span> <span class="nav-text">manifest.json</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#想-ios-safari-也能体验更好的添加到桌面"><span class="nav-number">4.2.1.1.</span> <span class="nav-text">想 iOS Safari 也能体验更好的添加到桌面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#service-worker"><span class="nav-number">4.2.1.2.</span> <span class="nav-text">Service Worker</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-pwa"><span class="nav-number">4.2.1.3.</span> <span class="nav-text">hexo-pwa</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
@@ -472,7 +474,7 @@
   <span class="with-love">
     <i class="icon-next-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">WangMingwei
+  <span class="author" itemprop="copyrightHolder">明伟
   </span>
 </div>
 
@@ -700,7 +702,7 @@
     });
   </script>
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1603160001210')
+  navigator.serviceWorker.register('/sw.js?t=1603179174790')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
