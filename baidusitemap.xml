@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.fightingtop.cn/Java/Java%E5%9F%BA%E7%A1%80%E4%B9%8BFile%E7%B1%BB%E3%80%81%E9%80%92%E5%BD%92/</loc>
+    <lastmod>2020-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.fightingtop.cn/Java/Java%E5%9F%BA%E7%A1%80/Java%E5%9F%BA%E7%A1%80%E4%B9%8B%E5%AD%97%E8%8A%82%E6%B5%81%E3%80%81%E5%AD%97%E7%AC%A6%E6%B5%81/</loc>
+    <lastmod>2020-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.fightingtop.cn/Java/Java%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/Java%E5%9F%BA%E7%A1%80%E4%B9%8B%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2020-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.fightingtop.cn/Java/Java%E5%9F%BA%E7%A1%80/Java%E5%9F%BA%E7%A1%80%E4%B9%8B%E7%BC%93%E5%86%B2%E6%B5%81%E3%80%81%E8%BD%AC%E6%8D%A2%E6%B5%81%E3%80%81%E5%BA%8F%E5%88%97%E5%8C%96%E6%B5%81%E3%80%81%E6%89%93%E5%8D%B0%E6%B5%81/</loc>
+    <lastmod>2020-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.fightingtop.cn/Java/Java%E5%9F%BA%E7%A1%80/Java%E5%9F%BA%E7%A1%80%E4%B9%8B%E5%8F%8D%E5%B0%84%E3%80%81%E6%B3%A8%E8%A7%A3/</loc>
+    <lastmod>2020-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.fightingtop.cn/Hexo/hexo-addition/</loc>
+    <lastmod>2020-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.fightingtop.cn/%E7%94%9F%E8%AF%8D%E6%9C%AC/glish%E7%94%9F%E8%AF%8D%E6%9C%AC/</loc>
+    <lastmod>2020-10-29</lastmod>
+  </url>
+  <url>
     <loc>https://blog.fightingtop.cn/Hexo/%E6%80%A7%E5%8C%96%E5%AE%9A%E5%88%B6hexo%E7%9A%84next%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2020-10-20</lastmod>
   </url>
@@ -11,29 +39,5 @@
   <url>
     <loc>https://blog.fightingtop.cn/cornerstone/ornerstone/</loc>
     <lastmod>2020-10-20</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.fightingtop.cn/Java/Java%E5%9F%BA%E7%A1%80%E4%B9%8BFile%E7%B1%BB%E3%80%81%E9%80%92%E5%BD%92/</loc>
-    <lastmod>2020-10-20</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.fightingtop.cn/Hexo/hexo-addition/</loc>
-    <lastmod>2020-10-20</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.fightingtop.cn/Java/Java%E5%9F%BA%E7%A1%80/Java%E5%9F%BA%E7%A1%80%E4%B9%8B%E7%BC%93%E5%86%B2%E6%B5%81%E3%80%81%E8%BD%AC%E6%8D%A2%E6%B5%81%E3%80%81%E5%BA%8F%E5%88%97%E5%8C%96%E6%B5%81%E3%80%81%E6%89%93%E5%8D%B0%E6%B5%81/</loc>
-    <lastmod>2020-10-19</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.fightingtop.cn/Java/Java%E5%9F%BA%E7%A1%80/Java%E5%9F%BA%E7%A1%80%E4%B9%8B%E5%AD%97%E8%8A%82%E6%B5%81%E3%80%81%E5%AD%97%E7%AC%A6%E6%B5%81/</loc>
-    <lastmod>2020-10-19</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.fightingtop.cn/Java/Java%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/Java%E5%9F%BA%E7%A1%80%E4%B9%8B%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2020-10-19</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.fightingtop.cn/Java/Java%E5%9F%BA%E7%A1%80/Java%E5%9F%BA%E7%A1%80%E4%B9%8B%E5%8F%8D%E5%B0%84%E3%80%81%E6%B3%A8%E8%A7%A3/</loc>
-    <lastmod>2020-05-08</lastmod>
   </url>
 </urlset> 
