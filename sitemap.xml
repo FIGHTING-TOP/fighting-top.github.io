@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.fightingtop.cn/%E7%94%9F%E8%AF%8D%E6%9C%AC/glish%E7%94%9F%E8%AF%8D%E6%9C%AC/</loc>
+    
+    <lastmod>2020-11-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.fightingtop.cn/Java/Java%E5%9F%BA%E7%A1%80%E4%B9%8BFile%E7%B1%BB%E3%80%81%E9%80%92%E5%BD%92/</loc>
     
     <lastmod>2020-10-29</lastmod>
@@ -38,13 +45,6 @@
   
   <url>
     <loc>https://blog.fightingtop.cn/Hexo/hexo-addition/</loc>
-    
-    <lastmod>2020-10-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.fightingtop.cn/%E7%94%9F%E8%AF%8D%E6%9C%AC/glish%E7%94%9F%E8%AF%8D%E6%9C%AC/</loc>
     
     <lastmod>2020-10-29</lastmod>
     
@@ -109,7 +109,7 @@
 
   <url>
     <loc>https://blog.fightingtop.cn/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -117,77 +117,77 @@
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/Java/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/Java%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2020-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fightingtop.cn/tags/blog/</loc>
-    <lastmod>2020-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fightingtop.cn/tags/seo/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/%E7%94%9F%E8%AF%8D%E6%9C%AC/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fightingtop.cn/tags/blog/</loc>
+    <lastmod>2020-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fightingtop.cn/tags/seo/</loc>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/Hexo/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/PWA/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/AMP/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/HTTPS/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/cornerstone/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -196,42 +196,42 @@
   
   <url>
     <loc>https://blog.fightingtop.cn/categories/Java/</loc>
-    <lastmod>2020-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fightingtop.cn/categories/Hexo/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/categories/%E7%94%9F%E8%AF%8D%E6%9C%AC/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/categories/Java/Java%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fightingtop.cn/categories/Hexo/</loc>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/categories/Java/Java%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/categories/cornerstone/</loc>
-    <lastmod>2020-10-29</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
