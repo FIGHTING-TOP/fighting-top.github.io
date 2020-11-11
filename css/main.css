@@ -992,10 +992,10 @@ body {
 }
 .site-author-image:hover {
   background-color: #87daff;
-  -webkit-transform: rotate(360deg) scale(1.1);
-  -moz-transform: rotate(360deg) scale(1.1);
-  -ms-transform: rotate(360deg) scale(1.1);
-  transform: rotate(360deg) scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .site-author-name {
   margin: 5px 0 0;
@@ -1028,6 +1028,11 @@ body {
 }
 .site-state-item-name {
   font-size: 13px;
+}
+.publicPlatform img {
+  margin: 80px auto 8px auto;
+  width: 110px;
+  border-radius: 5px;
 }
 .feed-link {
   margin-top: 20px;
@@ -1069,7 +1074,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #afff65;
+  background: #ffabff;
 }
 .links-of-friendly a {
   display: inline-block;
@@ -1087,7 +1092,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6c7198;
+  background: #7e4908;
 }
 .sidebar-nav {
   margin: 0;
