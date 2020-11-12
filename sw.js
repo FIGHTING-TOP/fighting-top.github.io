@@ -24,7 +24,7 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
-  precacheUrls.push('/生词本/glish生词本/');
+  precacheUrls.push('/article/大前端知识库/');
 
   precacheUrls.push('/cornerstone/ornerstone/');
 
@@ -32,7 +32,7 @@ var precacheUrls = [];
 
   precacheUrls.push('/Java/Java基础之File类、递归/');
 
-  precacheUrls.push('/Java/Java基础/网络编程/Java基础之网络编程/');
+  precacheUrls.push('/Java/Java基础/Java基础之字节流、字符流/');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":5};

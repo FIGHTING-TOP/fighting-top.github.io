@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.fightingtop.cn/%E7%94%9F%E8%AF%8D%E6%9C%AC/glish%E7%94%9F%E8%AF%8D%E6%9C%AC/</loc>
+    <loc>https://blog.fightingtop.cn/article/%E5%A4%A7%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%BA%93/</loc>
     
-    <lastmod>2020-11-10</lastmod>
+    <lastmod>2020-11-12</lastmod>
     
   </url>
   
@@ -109,7 +109,7 @@
 
   <url>
     <loc>https://blog.fightingtop.cn/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -117,77 +117,70 @@
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/Java/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/Java%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2020-11-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fightingtop.cn/tags/%E7%94%9F%E8%AF%8D%E6%9C%AC/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/blog/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/seo/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/Hexo/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/PWA/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/AMP/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/HTTPS/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/tags/cornerstone/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -196,42 +189,35 @@
   
   <url>
     <loc>https://blog.fightingtop.cn/categories/Java/</loc>
-    <lastmod>2020-11-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fightingtop.cn/categories/%E7%94%9F%E8%AF%8D%E6%9C%AC/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/categories/Hexo/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/categories/Java/Java%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/categories/Java/Java%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.fightingtop.cn/categories/cornerstone/</loc>
-    <lastmod>2020-11-11</lastmod>
+    <lastmod>2020-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
